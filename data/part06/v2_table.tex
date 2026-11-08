@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering
+\caption{Synthetic predictions at \(\sigma=5\,\mathrm{mm}\). The spatial statistics and time errors use paired crossings. Time medians and percentiles are absolute. Bias is prediction minus truth. Event accuracy uses all eligible trials.}
+\label{tab:part6-v2}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+Model & Paired & \multicolumn{3}{c}{Position error (m)} & \multicolumn{3}{c}{Time error (ms)} & Accuracy (\%) \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+ & & Median & P90 & RMSE & Median & P90 & Bias & \\
+\midrule
+B-G & 1152/1296 & 0.293 & 0.679 & 0.384 & 17.6 & 31.9 & -20.1 & 95.1 \\
+B-CA & 1054/1296 & 0.273 & 0.920 & 0.568 & 6.1 & 33.2 & 3.2 & 82.2 \\
+M-D & 1147/1296 & 0.293 & 0.680 & 0.383 & 5.8 & 27.3 & 0.6 & 94.8 \\
+M-DM & 1073/1296 & 0.256 & 0.857 & 0.517 & 5.5 & 26.2 & 2.6 & 83.8 \\
+\bottomrule
+\end{tabular}
+\end{table}

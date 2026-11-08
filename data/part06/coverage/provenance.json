@@ -1,0 +1,14 @@
+{
+  "python": "3.14.7",
+  "numpy": "2.5.2",
+  "scipy": "1.18.0",
+  "hashes": {
+    "data\\part6\\config.json": "5b89800384f71627ef9531ab0e1188be6793009242f96487bb3f1b402508243b",
+    "data\\part3\\config.json": "0af48bdbf12ee0e4eb8a34d241028f251210b0feffa547541de2c62946844159",
+    "part5_code_data\\part5_code_data\\scripts\\part5_solver.py": "4c9fa4be9ffa0dc778367637cbec6b0631fdc6494ff2bc98906bdefd4eaa510e",
+    "part5_code_data\\part5_code_data\\scripts\\run_part5.py": "ce549f53100b096fc04b14aad75b5e77f2ed7f799567e5fc01229afcc4c3b754",
+    "scripts\\still_air.py": "819d26672cd6313256bf520daa4e9aa707e54fe2f3c3b510495f7e7fa6bb5d54",
+    "scripts\\part6_common.py": "93479e763fbc28ab0d5c3f0eb0f9be30bcfcea6f1ae6145caf49c6aca0bc4e7f",
+    "scripts\\part6_coverage.py": "cfaaae8dd68b42acf828a89036157653275cc2b81c3e06f548a2817d9bc8a6e4"
+  }
+}

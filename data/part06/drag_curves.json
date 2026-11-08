@@ -1,0 +1,13 @@
+{
+  "source": "Goff, Asai and Hong (2014), https://doi.org/10.1177/1754337114526173",
+  "author_manuscript": "https://tsukuba.repo.nii.ac.jp/record/32041/files/JSET_228-3.pdf",
+  "locator": "Sections 2 and 4, equation (4) and figure 3",
+  "conditions": "Non-spinning, rear-sting-mounted full-size balls; geometrically symmetric mounting, with vertical panel asymmetry; separate Fig. 2 orientations refer to transverse-force tests.",
+  "digitization": "None. Coefficients are printed in the source text.",
+  "valid_q_m_s": [7.0, 35.0],
+  "law": "C_D(q) = a + b / (1 + exp((q - q_c) / q_s))",
+  "balls": {
+    "Brazuca": {"a": 0.187118, "b": 0.260996, "q_c": 12.9084, "q_s": 0.717838},
+    "Jabulani": {"a": 0.163643, "b": 0.306765, "q_c": 17.3015, "q_s": 1.61952}
+  }
+}

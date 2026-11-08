@@ -1,0 +1,24 @@
+\begin{table}[!htbp]
+\centering
+\caption{Noiseless model-mismatch tests. Position and time errors use paired crossings. Time error is absolute. Event disagreements are counted over all eligible trajectories.}
+\label{tab:part6-v3}
+\scriptsize
+\setlength{\tabcolsep}{2.25pt}
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Truth & Fit & Paired & \multicolumn{2}{c}{Position (mm)} & \shortstack{Time\\(ms)} & Event errors \\
+\cmidrule(lr){4-5}
+ & & & Median & P90 & Median & \\
+\midrule
+Reference truth & M-DM & 72 & 1.28 & 11.62 & 0.004 & 0/81 \\
+Crosswind & M-DM & 72 & 2.06 & 16.54 & 0.109 & 0/81 \\
+True \(C_D=0.30\) & M-DM & 72 & 1.37 & 12.52 & 0.005 & 0/81 \\
+True \(C_D=0.30\) & M-DM, \(C_D=0.20\) & 72 & 22.85 & 60.84 & 9.747 & 0/81 \\
+Spin decay & M-DM & 72 & 20.57 & 89.71 & 0.099 & 2/81 \\
+Axis rotation about \(\mathbf e_z\) & M-DM & 72 & 1.28 & 11.62 & 0.004 & 0/81 \\
+Axis rotation about \(\mathbf e_y\) & M-DM & 72 & 2.29 & 11.65 & 0.002 & 0/81 \\
+Zero spin with wake & M-D & 384 & 42.85 & 128.28 & 0.240 & 0/432 \\
+Zero spin with wake & M-D + known wake & 384 & \(<0.01\) & \(<0.01\) & \(<0.001\) & 0/432 \\
+\bottomrule
+\end{tabular}
+\end{table}

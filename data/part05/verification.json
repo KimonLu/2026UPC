@@ -1,0 +1,6 @@
+{
+  "independent_refits": 98,
+  "max_objective_improvement_m2": 2.357144020985816e-13,
+  "step_halving_cases": 202,
+  "max_step_halving_event_error": 6.227018900517578e-11
+}

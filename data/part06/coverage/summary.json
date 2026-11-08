@@ -1,0 +1,104 @@
+{
+  "calm/2000": {
+    "hits": 191,
+    "trials": 200,
+    "valid_regions": 200,
+    "failed_regions": 0,
+    "coverage": 0.955,
+    "wilson_95": [
+      0.9167032959981803,
+      0.976147456998507
+    ],
+    "conditional_coverage": 0.955,
+    "conditional_wilson_95": [
+      0.9167032959981803,
+      0.976147456998507
+    ],
+    "median_area_m2": 1.2125550555881015
+  },
+  "calm/4000": {
+    "hits": 192,
+    "trials": 200,
+    "valid_regions": 200,
+    "failed_regions": 0,
+    "coverage": 0.96,
+    "wilson_95": [
+      0.923067931799067,
+      0.9795943679338476
+    ],
+    "conditional_coverage": 0.96,
+    "conditional_wilson_95": [
+      0.923067931799067,
+      0.9795943679338476
+    ],
+    "median_area_m2": 1.2126705620100644
+  },
+  "tailwind/2000": {
+    "hits": 191,
+    "trials": 200,
+    "valid_regions": 200,
+    "failed_regions": 0,
+    "coverage": 0.955,
+    "wilson_95": [
+      0.9167032959981803,
+      0.976147456998507
+    ],
+    "conditional_coverage": 0.955,
+    "conditional_wilson_95": [
+      0.9167032959981803,
+      0.976147456998507
+    ],
+    "median_area_m2": 1.17420512423731
+  },
+  "tailwind/4000": {
+    "hits": 191,
+    "trials": 200,
+    "valid_regions": 200,
+    "failed_regions": 0,
+    "coverage": 0.955,
+    "wilson_95": [
+      0.9167032959981803,
+      0.976147456998507
+    ],
+    "conditional_coverage": 0.955,
+    "conditional_wilson_95": [
+      0.9167032959981803,
+      0.976147456998507
+    ],
+    "median_area_m2": 1.1755731885773313
+  },
+  "tailwind_spin_decay/2000": {
+    "hits": 190,
+    "trials": 200,
+    "valid_regions": 200,
+    "failed_regions": 0,
+    "coverage": 0.95,
+    "wilson_95": [
+      0.9104218518612239,
+      0.972617354399236
+    ],
+    "conditional_coverage": 0.95,
+    "conditional_wilson_95": [
+      0.9104218518612239,
+      0.972617354399236
+    ],
+    "median_area_m2": 1.1740012063248506
+  },
+  "tailwind_spin_decay/4000": {
+    "hits": 190,
+    "trials": 200,
+    "valid_regions": 200,
+    "failed_regions": 0,
+    "coverage": 0.95,
+    "wilson_95": [
+      0.9104218518612239,
+      0.972617354399236
+    ],
+    "conditional_coverage": 0.95,
+    "conditional_wilson_95": [
+      0.9104218518612239,
+      0.972617354399236
+    ],
+    "median_area_m2": 1.1766577755301817
+  }
+}

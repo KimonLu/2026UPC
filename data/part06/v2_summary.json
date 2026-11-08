@@ -1,0 +1,1858 @@
+{
+  "reference/B-G/0": {
+    "n": 81,
+    "n_eligible": 81,
+    "n_ineligible": 0,
+    "both_cross": 72,
+    "both_cross_fraction": 0.8888888888888888,
+    "correct_events": 77,
+    "event_accuracy": 0.9506172839506173,
+    "truth_events": {
+      "goal_inside": 59,
+      "goal_outside": 13,
+      "ground_first": 9,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 63,
+      "goal_outside": 9,
+      "ground_first": 9,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 59,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 4,
+        "goal_outside": 9,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 9,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.29474963868909626,
+      "p90": 0.6797009842431244,
+      "rmse": 0.38314947934904553,
+      "bias": 0.3053209415138141
+    },
+    "arrival_s": {
+      "median": 0.017662213851842523,
+      "p90": 0.031715611498047976,
+      "rmse": 0.021946789850789707,
+      "bias": -0.02009805896425642
+    },
+    "y_m": {
+      "median": 0.29377487034354255,
+      "p90": 0.6761494910943248,
+      "rmse": 0.3796924174623728,
+      "bias": -1.5419764230904951e-18
+    },
+    "z_m": {
+      "median": 0.03013424352353189,
+      "p90": 0.08777793948755937,
+      "rmse": 0.051353594295081594,
+      "bias": 0.04075484056281338
+    }
+  },
+  "reference/B-CA/0": {
+    "n": 81,
+    "n_eligible": 81,
+    "n_ineligible": 0,
+    "both_cross": 72,
+    "both_cross_fraction": 0.8888888888888888,
+    "correct_events": 81,
+    "event_accuracy": 1.0,
+    "truth_events": {
+      "goal_inside": 59,
+      "goal_outside": 13,
+      "ground_first": 9,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 59,
+      "goal_outside": 13,
+      "ground_first": 9,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 59,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 0,
+        "goal_outside": 13,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 9,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.03235829965725084,
+      "p90": 0.08426696737969284,
+      "rmse": 0.049867645148741986,
+      "bias": 0.042312320129710396
+    },
+    "arrival_s": {
+      "median": 0.0010860409823343353,
+      "p90": 0.002598709578020508,
+      "rmse": 0.001529283369821157,
+      "bias": 0.0013494823255987716
+    },
+    "y_m": {
+      "median": 0.022047000900468516,
+      "p90": 0.05275688665267288,
+      "rmse": 0.030755036770700364,
+      "bias": 0.0
+    },
+    "z_m": {
+      "median": 0.025453263509505414,
+      "p90": 0.07078468677241431,
+      "rmse": 0.039254423265585224,
+      "bias": -0.03194379413092375
+    }
+  },
+  "reference/M-D/0": {
+    "n": 81,
+    "n_eligible": 81,
+    "n_ineligible": 0,
+    "both_cross": 72,
+    "both_cross_fraction": 0.8888888888888888,
+    "correct_events": 77,
+    "event_accuracy": 0.9506172839506173,
+    "truth_events": {
+      "goal_inside": 59,
+      "goal_outside": 13,
+      "ground_first": 9,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 63,
+      "goal_outside": 9,
+      "ground_first": 9,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 59,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 4,
+        "goal_outside": 9,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 9,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.29401957728146577,
+      "p90": 0.6764718958818693,
+      "rmse": 0.37986299733924,
+      "bias": 0.29051567675926165
+    },
+    "arrival_s": {
+      "median": 0.0011977427493675141,
+      "p90": 0.00780856541491189,
+      "rmse": 0.004282978324590372,
+      "bias": -0.0006424179382903745
+    },
+    "y_m": {
+      "median": 0.29388835816411873,
+      "p90": 0.67620625179868,
+      "rmse": 0.3797532175081486,
+      "bias": 0.0
+    },
+    "z_m": {
+      "median": 0.0011493183869937251,
+      "p90": 0.016374088855345813,
+      "rmse": 0.009131842079241425,
+      "bias": 0.00039371129769281824
+    }
+  },
+  "reference/M-DM/0": {
+    "n": 81,
+    "n_eligible": 81,
+    "n_ineligible": 0,
+    "both_cross": 72,
+    "both_cross_fraction": 0.8888888888888888,
+    "correct_events": 81,
+    "event_accuracy": 1.0,
+    "truth_events": {
+      "goal_inside": 59,
+      "goal_outside": 13,
+      "ground_first": 9,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 59,
+      "goal_outside": 13,
+      "ground_first": 9,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 59,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 0,
+        "goal_outside": 13,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 9,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.001275042411013434,
+      "p90": 0.011623477158208655,
+      "rmse": 0.006112458849076049,
+      "bias": 0.0033937239959542062
+    },
+    "arrival_s": {
+      "median": 4.349737963149636e-06,
+      "p90": 9.550761502484792e-05,
+      "rmse": 8.948895581899068e-05,
+      "bias": -2.4412346828073866e-05
+    },
+    "y_m": {
+      "median": 0.0010130167442622406,
+      "p90": 0.010906766725843873,
+      "rmse": 0.005599805877529194,
+      "bias": -1.533976697594265e-13
+    },
+    "z_m": {
+      "median": 0.0007711256786027965,
+      "p90": 0.0042145740322359565,
+      "rmse": 0.002450372893181281,
+      "bias": -0.00151868362325835
+    }
+  },
+  "reference/B-G/0.001": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1152,
+    "both_cross_fraction": 0.8888888888888888,
+    "correct_events": 1232,
+    "event_accuracy": 0.9506172839506173,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 1008,
+      "goal_outside": 144,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 944,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 64,
+        "goal_outside": 144,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 144,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.2942682649961458,
+      "p90": 0.6810521514014491,
+      "rmse": 0.3831475052160562,
+      "bias": 0.3053540909055061
+    },
+    "arrival_s": {
+      "median": 0.01766317496696032,
+      "p90": 0.03168021207296006,
+      "rmse": 0.021950016369762303,
+      "bias": -0.02009617146336022
+    },
+    "y_m": {
+      "median": 0.2933584856847662,
+      "p90": 0.6779602313078937,
+      "rmse": 0.3796680602343104,
+      "bias": -0.00017523415518618123
+    },
+    "z_m": {
+      "median": 0.030251808642169087,
+      "p90": 0.08948419807699154,
+      "rmse": 0.05151868390403451,
+      "bias": 0.04091719394306474
+    }
+  },
+  "reference/B-CA/0.001": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1148,
+    "both_cross_fraction": 0.8858024691358025,
+    "correct_events": 1282,
+    "event_accuracy": 0.9891975308641975,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 940,
+      "goal_outside": 208,
+      "ground_first": 148,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 935,
+        "goal_outside": 5,
+        "ground_first": 4,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 5,
+        "goal_outside": 203,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 144,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.06603046396541966,
+      "p90": 0.21258324115891544,
+      "rmse": 0.1258699423111951,
+      "bias": 0.09379263345490989
+    },
+    "arrival_s": {
+      "median": 0.0016330643682453405,
+      "p90": 0.008038567339046227,
+      "rmse": 0.004978632910867086,
+      "bias": 0.001541452011783509
+    },
+    "y_m": {
+      "median": 0.03873415575581318,
+      "p90": 0.14239929857382283,
+      "rmse": 0.09181071407370069,
+      "bias": 0.0032252489038294358
+    },
+    "z_m": {
+      "median": 0.03709457946283312,
+      "p90": 0.13343545533248502,
+      "rmse": 0.08610479172903657,
+      "bias": -0.02644604952189349
+    }
+  },
+  "reference/M-D/0.001": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1152,
+    "both_cross_fraction": 0.8888888888888888,
+    "correct_events": 1232,
+    "event_accuracy": 0.9506172839506173,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 1008,
+      "goal_outside": 144,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 944,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 64,
+        "goal_outside": 144,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 144,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.29363342527722025,
+      "p90": 0.6787249166832737,
+      "rmse": 0.3800498212392641,
+      "bias": 0.2934749020663993
+    },
+    "arrival_s": {
+      "median": 0.0021687522420784644,
+      "p90": 0.008725779652176616,
+      "rmse": 0.005575237711698799,
+      "bias": -0.0005783203323110549
+    },
+    "y_m": {
+      "median": 0.2934741781811132,
+      "p90": 0.6780088937951283,
+      "rmse": 0.3797292122130777,
+      "bias": -0.000175035954145047
+    },
+    "z_m": {
+      "median": 0.005524284151747716,
+      "p90": 0.02413502287417661,
+      "rmse": 0.015607434639683624,
+      "bias": 0.00033919092276227296
+    }
+  },
+  "reference/M-DM/0.001": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1151,
+    "both_cross_fraction": 0.8881172839506173,
+    "correct_events": 1277,
+    "event_accuracy": 0.9853395061728395,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 951,
+      "goal_outside": 200,
+      "ground_first": 145,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 938,
+        "goal_outside": 5,
+        "ground_first": 1,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 13,
+        "goal_outside": 195,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 144,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.05512670993195054,
+      "p90": 0.18312518213701878,
+      "rmse": 0.10724907967278977,
+      "bias": 0.07937530906935465
+    },
+    "arrival_s": {
+      "median": 0.0011539188118779298,
+      "p90": 0.006719908328239432,
+      "rmse": 0.0039026739111460234,
+      "bias": 0.00012172571834281494
+    },
+    "y_m": {
+      "median": 0.03212472645422437,
+      "p90": 0.12292633717250312,
+      "rmse": 0.07757376090185367,
+      "bias": 0.0035666093347815238
+    },
+    "z_m": {
+      "median": 0.03155837373396564,
+      "p90": 0.1174615218681328,
+      "rmse": 0.07405860321530812,
+      "bias": 0.003166982585905066
+    }
+  },
+  "reference/B-G/0.005": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1152,
+    "both_cross_fraction": 0.8888888888888888,
+    "correct_events": 1232,
+    "event_accuracy": 0.9506172839506173,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 1008,
+      "goal_outside": 144,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 944,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 64,
+        "goal_outside": 144,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 144,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.2927994368546821,
+      "p90": 0.679157875893251,
+      "rmse": 0.3838526994490745,
+      "bias": 0.30696945655866337
+    },
+    "arrival_s": {
+      "median": 0.01755542510074007,
+      "p90": 0.031899474965036215,
+      "rmse": 0.021973230887093527,
+      "bias": -0.020087582795282024
+    },
+    "y_m": {
+      "median": 0.2922567262544389,
+      "p90": 0.6736766416859936,
+      "rmse": 0.3799367258839757,
+      "bias": -0.0008766036601302982
+    },
+    "z_m": {
+      "median": 0.03144934132099503,
+      "p90": 0.09866987276245327,
+      "rmse": 0.05468984548255957,
+      "bias": 0.04156411307239268
+    }
+  },
+  "reference/B-CA/0.005": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1054,
+    "both_cross_fraction": 0.8132716049382716,
+    "correct_events": 1065,
+    "event_accuracy": 0.8217592592592593,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 808,
+      "goal_outside": 264,
+      "ground_first": 224,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 768,
+        "goal_outside": 92,
+        "ground_first": 84,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 23,
+        "goal_outside": 171,
+        "ground_first": 14,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 17,
+        "goal_outside": 1,
+        "ground_first": 126,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.2726684919622327,
+      "p90": 0.9200022754967402,
+      "rmse": 0.5681644074594332,
+      "bias": 0.4089415757874811
+    },
+    "arrival_s": {
+      "median": 0.006127258598340124,
+      "p90": 0.03321740375770719,
+      "rmse": 0.024540086946864846,
+      "bias": 0.0032185984054738655
+    },
+    "y_m": {
+      "median": 0.16450815185968473,
+      "p90": 0.675405045611787,
+      "rmse": 0.4353786074791855,
+      "bias": 0.014140165139987943
+    },
+    "z_m": {
+      "median": 0.1498149135297322,
+      "p90": 0.5687325190316321,
+      "rmse": 0.36504282221845447,
+      "bias": 0.049105115754834956
+    }
+  },
+  "reference/M-D/0.005": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1147,
+    "both_cross_fraction": 0.8850308641975309,
+    "correct_events": 1228,
+    "event_accuracy": 0.9475308641975309,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 1003,
+      "goal_outside": 144,
+      "ground_first": 149,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 940,
+        "goal_outside": 0,
+        "ground_first": 4,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 63,
+        "goal_outside": 144,
+        "ground_first": 1,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 144,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.29260999491705875,
+      "p90": 0.6801313006339482,
+      "rmse": 0.3826798920232395,
+      "bias": 0.3039426326102057
+    },
+    "arrival_s": {
+      "median": 0.00579682348706978,
+      "p90": 0.02734092771353335,
+      "rmse": 0.01591001358228102,
+      "bias": 0.0005956718768929157
+    },
+    "y_m": {
+      "median": 0.2920674531463465,
+      "p90": 0.6714553734176825,
+      "rmse": 0.3784793913166149,
+      "bias": -0.003340026046883545
+    },
+    "z_m": {
+      "median": 0.018179730518003145,
+      "p90": 0.09626221567649068,
+      "rmse": 0.056544231425698095,
+      "bias": -0.003364848555297769
+    }
+  },
+  "reference/M-DM/0.005": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1073,
+    "both_cross_fraction": 0.8279320987654321,
+    "correct_events": 1086,
+    "event_accuracy": 0.8379629629629629,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 828,
+      "goal_outside": 263,
+      "ground_first": 205,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 786,
+        "goal_outside": 88,
+        "ground_first": 70,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 25,
+        "goal_outside": 174,
+        "ground_first": 9,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 17,
+        "goal_outside": 1,
+        "ground_first": 126,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.2555122059299742,
+      "p90": 0.8565789199166881,
+      "rmse": 0.5170291119323143,
+      "bias": 0.3773769997552551
+    },
+    "arrival_s": {
+      "median": 0.005473629584805961,
+      "p90": 0.02620401068675782,
+      "rmse": 0.0179689814222362,
+      "bias": 0.0026016670868119875
+    },
+    "y_m": {
+      "median": 0.15521580583911893,
+      "p90": 0.6157093655979597,
+      "rmse": 0.3840590395112309,
+      "bias": 0.011671489775381612
+    },
+    "z_m": {
+      "median": 0.14181920057229425,
+      "p90": 0.5469147374076563,
+      "rmse": 0.34614701610042564,
+      "bias": 0.05984584619833565
+    }
+  },
+  "reference/B-G/0.01": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1152,
+    "both_cross_fraction": 0.8888888888888888,
+    "correct_events": 1224,
+    "event_accuracy": 0.9444444444444444,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 1000,
+      "goal_outside": 152,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 936,
+        "goal_outside": 8,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 64,
+        "goal_outside": 144,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 144,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.2946457275864479,
+      "p90": 0.6780143779084198,
+      "rmse": 0.3863292066591496,
+      "bias": 0.31190030316659023
+    },
+    "arrival_s": {
+      "median": 0.017253149834257797,
+      "p90": 0.032467093253957094,
+      "rmse": 0.02202541668718057,
+      "bias": -0.020074507807584803
+    },
+    "y_m": {
+      "median": 0.2926766187130242,
+      "p90": 0.672790345709404,
+      "rmse": 0.381094120435269,
+      "bias": -0.0017542884949676985
+    },
+    "z_m": {
+      "median": 0.034624450591437594,
+      "p90": 0.10919595769419971,
+      "rmse": 0.06338396711753351,
+      "bias": 0.042367145340987816
+    }
+  },
+  "reference/B-CA/0.01": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 985,
+    "both_cross_fraction": 0.7600308641975309,
+    "correct_events": 883,
+    "event_accuracy": 0.6813271604938271,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 699,
+      "goal_outside": 322,
+      "ground_first": 271,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 4,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 632,
+        "goal_outside": 171,
+        "ground_first": 140,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 1,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 38,
+        "goal_outside": 144,
+        "ground_first": 24,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 2,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 29,
+        "goal_outside": 7,
+        "ground_first": 107,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 1,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.5331915187011151,
+      "p90": 1.7915207975485674,
+      "rmse": 1.1736255033435994,
+      "bias": 0.8049376711399201
+    },
+    "arrival_s": {
+      "median": 0.011612920324822085,
+      "p90": 0.06088312998648495,
+      "rmse": 0.045682814577709896,
+      "bias": 0.005062729613639973
+    },
+    "y_m": {
+      "median": 0.32215546058304234,
+      "p90": 1.2555121740947623,
+      "rmse": 0.8907711855798321,
+      "bias": 0.018156728524279655
+    },
+    "z_m": {
+      "median": 0.28265645508240217,
+      "p90": 1.0479442212885446,
+      "rmse": 0.7641488840790239,
+      "bias": 0.19104011760294554
+    }
+  },
+  "reference/M-D/0.01": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1123,
+    "both_cross_fraction": 0.8665123456790124,
+    "correct_events": 1210,
+    "event_accuracy": 0.933641975308642,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 977,
+      "goal_outside": 146,
+      "ground_first": 173,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 922,
+        "goal_outside": 2,
+        "ground_first": 20,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 55,
+        "goal_outside": 144,
+        "ground_first": 9,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 144,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.29402510705834756,
+      "p90": 0.676553967834047,
+      "rmse": 0.3863244221666709,
+      "bias": 0.31243733014452046
+    },
+    "arrival_s": {
+      "median": 0.010412213492794142,
+      "p90": 0.03387222033266169,
+      "rmse": 0.025371226754500906,
+      "bias": 0.002900821191253697
+    },
+    "y_m": {
+      "median": 0.2922456088703256,
+      "p90": 0.6600521131933343,
+      "rmse": 0.374555942437297,
+      "bias": -0.002212599999191974
+    },
+    "z_m": {
+      "median": 0.03148294846902161,
+      "p90": 0.12562495286833622,
+      "rmse": 0.09462771870504147,
+      "bias": -0.009995594119064278
+    }
+  },
+  "reference/M-DM/0.01": {
+    "n": 1296,
+    "n_eligible": 1296,
+    "n_ineligible": 0,
+    "both_cross": 1012,
+    "both_cross_fraction": 0.7808641975308642,
+    "correct_events": 932,
+    "event_accuracy": 0.7191358024691358,
+    "truth_events": {
+      "goal_inside": 944,
+      "goal_outside": 208,
+      "ground_first": 144,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "prediction_events": {
+      "goal_inside": 739,
+      "goal_outside": 308,
+      "ground_first": 249,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0,
+      "not_observed": 0
+    },
+    "confusion": {
+      "goal_inside": {
+        "goal_inside": 670,
+        "goal_outside": 153,
+        "ground_first": 121,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "goal_outside": {
+        "goal_inside": 36,
+        "goal_outside": 153,
+        "ground_first": 19,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "ground_first": {
+        "goal_inside": 33,
+        "goal_outside": 2,
+        "ground_first": 109,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "fit_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "numerical_failure": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "timeout": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "goal_inside": 0,
+        "goal_outside": 0,
+        "ground_first": 0,
+        "fit_failure": 0,
+        "numerical_failure": 0,
+        "timeout": 0,
+        "not_observed": 0
+      }
+    },
+    "position_m": {
+      "median": 0.4993813783976598,
+      "p90": 1.6782389798661108,
+      "rmse": 1.0031685112779947,
+      "bias": 0.7318922252429428
+    },
+    "arrival_s": {
+      "median": 0.010060554847383607,
+      "p90": 0.040222509639082686,
+      "rmse": 0.03768294604876268,
+      "bias": 0.009561205200736814
+    },
+    "y_m": {
+      "median": 0.2986464745993591,
+      "p90": 1.2088965093545818,
+      "rmse": 0.7543577956574035,
+      "bias": 0.021131990367607992
+    },
+    "z_m": {
+      "median": 0.2716277937716548,
+      "p90": 1.0124818048701314,
+      "rmse": 0.661280105666737,
+      "bias": 0.17348318614996236
+    }
+  }
+}

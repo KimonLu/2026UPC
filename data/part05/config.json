@@ -1,0 +1,72 @@
+{
+  "seed": 20261107,
+  "n": 4000,
+  "position_sigma_m": [
+    0.0,
+    0.001,
+    0.005,
+    0.01
+  ],
+  "rounding_half_width_m": 0.005,
+  "time_sigma_s": [
+    0.0005,
+    0.001
+  ],
+  "nominal_times": [
+    0.0,
+    0.05,
+    0.1
+  ],
+  "positions": [
+    [
+      0.0,
+      0.0,
+      0.11
+    ],
+    [
+      1.5,
+      0.45,
+      0.44
+    ],
+    [
+      2.96,
+      0.86,
+      0.74
+    ]
+  ],
+  "models": [
+    "B-G",
+    "B-CA",
+    "M-DM/calm",
+    "M-DM/wind"
+  ],
+  "main_wind_m_s": [
+    2.0,
+    0.0,
+    0.0
+  ],
+  "observation_rk4_steps_per_interval": 10,
+  "prediction_rk4_step_s": 0.004,
+  "expanded_bounds": [
+    [
+      5.0,
+      -30.0,
+      0.01,
+      0.01,
+      -150.0,
+      -150.0
+    ],
+    [
+      55.0,
+      30.0,
+      30.0,
+      1.0,
+      150.0,
+      150.0
+    ]
+  ],
+  "region": "empirical Mahalanobis 95% ellipse conditional on successful goal-plane crossing; not a calibrated coverage claim",
+  "parameter_sampling": "none; 5C--5F are prescribed scenarios, not random priors",
+  "gaussian_rounding_matched_sigma_m": 0.002886751345948129,
+  "published_n": 4000
+}

@@ -1,0 +1,61 @@
+{
+  "url": "https://link.springer.com/article/10.1038/s41598-026-56275-1/figures/7",
+  "doi": "10.1038/s41598-026-56275-1",
+  "panel": "7(a), side force",
+  "image_sha256": "2834d11cf7782d85822acd49f2f5380f8da3ee047be739c27544214b64093570",
+  "sample_hz": 200,
+  "welch_segment_samples": 256,
+  "frequency_bin_hz": 0.78125,
+  "axes": "frequency linear 0 to 100 Hz, PSD logarithmic 1e-5 to 10 N^2/Hz",
+  "used_band_hz": [
+    0.78125,
+    99.21875
+  ],
+  "exclusions": "DC, frequencies below first positive bin, and Nyquist endpoint",
+  "digitization": "Weighted centre of colour stroke; 10th to 90th percentile pixel span. Isolated covered bins are interpolated between adjacent visible bins in log PSD.",
+  "balls": {
+    "Trionda A": {
+      "hidden_bins_hz": [
+        22.65625,
+        23.4375,
+        24.21875,
+        27.34375,
+        30.46875,
+        32.8125,
+        35.15625,
+        35.9375,
+        36.71875,
+        45.3125,
+        48.4375,
+        49.21875,
+        68.75,
+        75.0,
+        75.78125,
+        82.8125,
+        85.9375,
+        86.71875
+      ],
+      "first_bin_reading_halfspan_dex": 0.1844484629294756
+    },
+    "Al Rihla": {
+      "hidden_bins_hz": [
+        25.78125,
+        42.96875,
+        60.9375,
+        62.5,
+        73.4375,
+        74.21875,
+        79.6875
+      ],
+      "first_bin_reading_halfspan_dex": 0.10397785413501147
+    },
+    "Telstar": {
+      "hidden_bins_hz": [],
+      "first_bin_reading_halfspan_dex": 0.20614828209764918
+    },
+    "Brazuca": {
+      "hidden_bins_hz": [],
+      "first_bin_reading_halfspan_dex": 0.162748643761302
+    }
+  }
+}
