@@ -77,6 +77,7 @@ def draw_figures(mode, env):
         ("part04.run_part4", ["--paper-figures"]),
         ("part05.plot_part5_revision", []),
         ("part06.summarize_benchmarks", []),
+        ("part06.kde_sensitivity", []),
         ("part06.plot_part6", []),
         ("part06.plot_goal_plane", []),
         ("part06.write_part6_tables", []),

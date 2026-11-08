@@ -58,9 +58,9 @@ def summarize(prediction,fit=None,n=None):
     return result
 
 
-def kde_mode(points):
+def kde_mode(points, bandwidth='scott'):
     yz=points[np.isfinite(points).all(axis=1),1:]
-    kde=gaussian_kde(yz.T,bw_method='scott')
+    kde=gaussian_kde(yz.T,bw_method=bandwidth)
     low,high=np.quantile(yz,[.001,.999],axis=0)
     yy,zz=np.meshgrid(np.linspace(low[0],high[0],65),np.linspace(low[1],high[1],65))
     grid=np.column_stack([yy.ravel(),zz.ravel()]);density=kde(grid.T)

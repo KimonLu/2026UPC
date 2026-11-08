@@ -1,0 +1,74 @@
+{
+  "source": "data/part05/ensembles.npz",
+  "condition": "position/gaussian/0.005",
+  "model": "M-DM/calm",
+  "grid_per_axis": 65,
+  "grid_quantiles": [
+    0.001,
+    0.999
+  ],
+  "starts": 8,
+  "optimizer": "BFGS",
+  "gradient_tolerance": 1e-07,
+  "runtime": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "modes": [
+    {
+      "y_m": 2.5510629548454298,
+      "z_m": 1.8926504800769548,
+      "bandwidth_factor": 0.2265870317146031,
+      "conditioning": "inside-goal crossings only",
+      "draws": 2000,
+      "inside_samples": 1937,
+      "scott_multiplier": 0.8
+    },
+    {
+      "y_m": 2.5507601551849004,
+      "z_m": 1.9094837176533377,
+      "bandwidth_factor": 0.28323378964325385,
+      "conditioning": "inside-goal crossings only",
+      "draws": 2000,
+      "inside_samples": 1937,
+      "scott_multiplier": 1.0
+    },
+    {
+      "y_m": 2.552195247495749,
+      "z_m": 1.9388948732633433,
+      "bandwidth_factor": 0.3398805475719046,
+      "conditioning": "inside-goal crossings only",
+      "draws": 2000,
+      "inside_samples": 1937,
+      "scott_multiplier": 1.2
+    },
+    {
+      "y_m": 2.5562670629061937,
+      "z_m": 2.0374585025936356,
+      "bandwidth_factor": 0.20176206814376313,
+      "conditioning": "inside-goal crossings only",
+      "draws": 4000,
+      "inside_samples": 3886,
+      "scott_multiplier": 0.8
+    },
+    {
+      "y_m": 2.5590965189952275,
+      "z_m": 2.0328659134660643,
+      "bandwidth_factor": 0.2522025851797039,
+      "conditioning": "inside-goal crossings only",
+      "draws": 4000,
+      "inside_samples": 3886,
+      "scott_multiplier": 1.0
+    },
+    {
+      "y_m": 2.5626069697251075,
+      "z_m": 2.01932376887867,
+      "bandwidth_factor": 0.30264310221564467,
+      "conditioning": "inside-goal crossings only",
+      "draws": 4000,
+      "inside_samples": 3886,
+      "scott_multiplier": 1.2
+    }
+  ]
+}
