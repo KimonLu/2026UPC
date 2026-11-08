@@ -1,0 +1,29 @@
+{
+  "times_s": [0.0, 0.05, 0.10],
+  "positions_m": [[0.0, 0.0, 0.11], [1.50, 0.45, 0.44], [2.96, 0.86, 0.74]],
+  "physics": {
+    "radius": 0.11,
+    "mass": 0.43,
+    "gravity": 9.81,
+    "density": 1.20,
+    "viscosity": 1.81e-5,
+    "wind": [0.0, 0.0, 0.0]
+  },
+  "integration": {
+    "rtol": 1e-9,
+    "atol": 1e-11,
+    "max_step": 0.002,
+    "t_max": 2.0,
+    "goal_x": 11.0,
+    "goal_half_width": 3.66,
+    "goal_height": 2.44
+  },
+  "k_l": 1.0,
+  "fixed_cd": 0.20,
+  "finite_spin_decay_s": [5.0, 1.0],
+  "seed": 20261107,
+  "random_starts": 32,
+  "coordinate_screen_m": 0.005,
+  "cd_grid": [0.05, 0.60, 0.01],
+  "chord_spin_grid_rad_s": [-100, 100, 20]
+}

@@ -1,0 +1,18 @@
+{
+  "base_config": "../part03/config.json",
+  "winds": {
+    "calm": [0, 0, 0],
+    "x-5": [-5, 0, 0],
+    "x-2": [-2, 0, 0],
+    "x+2": [2, 0, 0],
+    "x+5": [5, 0, 0],
+    "y-5": [0, -5, 0],
+    "y-2": [0, -2, 0],
+    "y+2": [0, 2, 0],
+    "y+5": [0, 5, 0],
+    "diagonal": [3, 4, 0]
+  },
+  "part5_reference": "4A/x+2",
+  "refined_integration": {"rtol": 1e-10, "atol": 1e-12, "max_step": 0.001},
+  "convergence_limits": {"goal_displacement_m": 0.0001, "event_time_s": 0.00001}
+}
