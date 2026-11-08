@@ -13,31 +13,34 @@ from scripts.common.plot_style import GRID, INK, STYLES, TEAL, VIOLET, panel, sa
 
 
 def prediction_errors(summary, path):
+    """Show common-crossing errors and all-trial event accuracy separately."""
     models = CONFIG['synthetic']['models']
     noise = CONFIG['synthetic']['noise_sigma_m']
-    x = np.arange(len(noise))
-    fig, axes = plt.subplots(1, 2, figsize=(8.6, 3.35), layout='constrained')
-    for ax, metric, label, factor in (
-        (axes[0], 'position_m', 'Goal-plane error (m)', 1),
-        (axes[1], 'arrival_s', 'Absolute arrival-time error (ms)', 1000),
-    ):
-        for i, model in enumerate(models):
-            color, marker, _ = STYLES[model]
-            records = [summary[f'reference/{model}/{sigma:g}'][metric] for sigma in noise]
-            medians = np.array([row['median'] for row in records])*factor
-            p90 = np.array([row['p90'] for row in records])*factor
-            offset = (i-(len(models)-1)/2)*.16
-            ax.errorbar(x+offset, medians, yerr=[np.zeros(len(x)), p90-medians],
-                        fmt=marker, color=color, capsize=3, markersize=5, label=model)
+    x = 1000 * np.asarray(noise)
+    fig, axes = plt.subplots(1, 3, figsize=(10.8, 3.6), layout='constrained')
+    groups = [summary['by_noise_m'][f'{sigma:g}'] for sigma in noise]
+    for model in models:
+        color, marker, _ = STYLES[model]
+        records = [group['models'][model] for group in groups]
+        for ax, metric in zip(axes[:2], ('median', 'p90')):
+            values = [entry['common_position_m'][metric] for entry in records]
+            ax.plot(x, values, marker=marker, color=color, linewidth=1.4, markersize=5, label=model)
+        axes[2].plot(x, [entry['event_accuracy'] for entry in records], marker=marker,
+                     color=color, linewidth=1.4, markersize=5, label=model)
+    for ax in axes:
         ax.set_xticks(x, [f'{1000*sigma:g}' for sigma in noise])
         ax.set_xlabel(r'Coordinate noise $\sigma$ (mm)')
-        ax.set_ylabel(label)
         ax.grid(axis='y', color=GRID, linewidth=.8)
         ax.set_axisbelow(True)
-        lo, hi = ax.get_ylim()
-        ax.set_ylim(min(lo, -.035*hi), hi)
-    panel(axes[0], '(a)', 'Crossing position')
-    panel(axes[1], '(b)', 'Arrival time')
+    for ax in axes[:2]:
+        ax.set_ylabel('Crossing error (m)')
+        ax.set_ylim(bottom=0)
+    axes[2].set_ylabel('Correct first-event class')
+    axes[2].yaxis.set_major_formatter(PercentFormatter(xmax=1, decimals=0))
+    axes[2].set_ylim(.60, 1.02)
+    panel(axes[0], '(a)', 'Common subset: median')
+    panel(axes[1], '(b)', 'Common subset: P90')
+    panel(axes[2], '(c)', 'All eligible trials')
     handles, labels = axes[0].get_legend_handles_labels()
     fig.legend(handles, labels, loc='outside lower center', ncols=4, frameon=False)
     save(fig, path)
@@ -83,7 +86,7 @@ def make_figures():
                          'axes.spines.top': False, 'axes.spines.right': False,
                          'text.color': INK, 'axes.labelcolor': INK,
                          'xtick.color': INK, 'ytick.color': INK})
-    prediction_errors(read_json(DATA / 'v2_summary.json'), figures / 'part6_fig1.png')
+    prediction_errors(read_json(DATA / 'benchmark_comparison.json'), figures / 'part6_fig1.png')
     coverage_plot(read_json(DATA / 'coverage' / 'summary.json'), figures / 'part6_fig2.png')
 
 

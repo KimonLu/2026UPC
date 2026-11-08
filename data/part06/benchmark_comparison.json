@@ -1,0 +1,755 @@
+{
+  "source": "data/part06/v2_predictions.csv",
+  "source_sha256": "a32d41e000688daf3c6e2dda8378c47db0b3d069707aeb72fd983f63f21a7337",
+  "common_subset": "Truth and every model reach the goal plane on the same case and replicate.",
+  "event_denominator": "All observation-eligible trials, including failed predictions.",
+  "by_noise_m": {
+    "0": {
+      "trials": 81,
+      "common_crossings": 72,
+      "truth_event_counts": {
+        "goal_inside": 59,
+        "goal_outside": 13,
+        "ground_first": 9
+      },
+      "models": {
+        "B-G": {
+          "trials": 81,
+          "paired_crossings": 72,
+          "paired_position_m": {
+            "median": 0.29474963868909626,
+            "p90": 0.6797009842431244,
+            "rmse": 0.38314947934904553,
+            "bias": 0.3053209415138141
+          },
+          "paired_arrival_s": {
+            "median": 0.017662213851842523,
+            "p90": 0.031715611498047976,
+            "rmse": 0.021946789850789707,
+            "bias": -0.02009805896425642
+          },
+          "common_position_m": {
+            "median": 0.29474963868909626,
+            "p90": 0.6797009842431244,
+            "rmse": 0.38314947934904553,
+            "bias": 0.3053209415138141
+          },
+          "common_arrival_s": {
+            "median": 0.017662213851842523,
+            "p90": 0.031715611498047976,
+            "rmse": 0.021946789850789707,
+            "bias": -0.02009805896425642
+          },
+          "correct_events": 77,
+          "event_accuracy": 0.9506172839506173,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 9
+            },
+            "goal_outside": {
+              "goal_inside": 4,
+              "goal_outside": 9
+            },
+            "goal_inside": {
+              "goal_inside": 59
+            }
+          }
+        },
+        "B-CA": {
+          "trials": 81,
+          "paired_crossings": 72,
+          "paired_position_m": {
+            "median": 0.03235829965725084,
+            "p90": 0.08426696737969284,
+            "rmse": 0.049867645148741986,
+            "bias": 0.042312320129710396
+          },
+          "paired_arrival_s": {
+            "median": 0.0010860409823343353,
+            "p90": 0.002598709578020508,
+            "rmse": 0.001529283369821157,
+            "bias": 0.0013494823255987716
+          },
+          "common_position_m": {
+            "median": 0.03235829965725084,
+            "p90": 0.08426696737969284,
+            "rmse": 0.049867645148741986,
+            "bias": 0.04231232012971039
+          },
+          "common_arrival_s": {
+            "median": 0.0010860409823343353,
+            "p90": 0.002598709578020508,
+            "rmse": 0.001529283369821157,
+            "bias": 0.0013494823255987716
+          },
+          "correct_events": 81,
+          "event_accuracy": 1.0,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 9
+            },
+            "goal_outside": {
+              "goal_outside": 13
+            },
+            "goal_inside": {
+              "goal_inside": 59
+            }
+          }
+        },
+        "M-D": {
+          "trials": 81,
+          "paired_crossings": 72,
+          "paired_position_m": {
+            "median": 0.29401957728146577,
+            "p90": 0.6764718958818693,
+            "rmse": 0.37986299733924,
+            "bias": 0.29051567675926165
+          },
+          "paired_arrival_s": {
+            "median": 0.0011977427493675141,
+            "p90": 0.00780856541491189,
+            "rmse": 0.004282978324590372,
+            "bias": -0.0006424179382903745
+          },
+          "common_position_m": {
+            "median": 0.29401957728146577,
+            "p90": 0.6764718958818693,
+            "rmse": 0.37986299733924,
+            "bias": 0.29051567675926165
+          },
+          "common_arrival_s": {
+            "median": 0.0011977427493675141,
+            "p90": 0.00780856541491189,
+            "rmse": 0.004282978324590372,
+            "bias": -0.0006424179382903745
+          },
+          "correct_events": 77,
+          "event_accuracy": 0.9506172839506173,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 9
+            },
+            "goal_outside": {
+              "goal_inside": 4,
+              "goal_outside": 9
+            },
+            "goal_inside": {
+              "goal_inside": 59
+            }
+          }
+        },
+        "M-DM": {
+          "trials": 81,
+          "paired_crossings": 72,
+          "paired_position_m": {
+            "median": 0.001275042411013434,
+            "p90": 0.011623477158208655,
+            "rmse": 0.006112458849076049,
+            "bias": 0.0033937239959542062
+          },
+          "paired_arrival_s": {
+            "median": 4.349737963149636e-06,
+            "p90": 9.550761502484792e-05,
+            "rmse": 8.948895581899068e-05,
+            "bias": -2.4412346828073866e-05
+          },
+          "common_position_m": {
+            "median": 0.001275042411013434,
+            "p90": 0.011623477158208655,
+            "rmse": 0.006112458849076049,
+            "bias": 0.0033937239959542062
+          },
+          "common_arrival_s": {
+            "median": 4.349737963149636e-06,
+            "p90": 9.550761502484792e-05,
+            "rmse": 8.948895581899068e-05,
+            "bias": -2.4412346828073866e-05
+          },
+          "correct_events": 81,
+          "event_accuracy": 1.0,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 9
+            },
+            "goal_outside": {
+              "goal_outside": 13
+            },
+            "goal_inside": {
+              "goal_inside": 59
+            }
+          }
+        }
+      }
+    },
+    "0.001": {
+      "trials": 1296,
+      "common_crossings": 1148,
+      "truth_event_counts": {
+        "goal_inside": 944,
+        "goal_outside": 208,
+        "ground_first": 144
+      },
+      "models": {
+        "B-G": {
+          "trials": 1296,
+          "paired_crossings": 1152,
+          "paired_position_m": {
+            "median": 0.2942682649961458,
+            "p90": 0.6810521514014491,
+            "rmse": 0.3831475052160562,
+            "bias": 0.3053540909055061
+          },
+          "paired_arrival_s": {
+            "median": 0.01766317496696032,
+            "p90": 0.03168021207296006,
+            "rmse": 0.021950016369762303,
+            "bias": -0.02009617146336022
+          },
+          "common_position_m": {
+            "median": 0.29443744379892267,
+            "p90": 0.6805221138423548,
+            "rmse": 0.3832484692281409,
+            "bias": 0.30558993849066673
+          },
+          "common_arrival_s": {
+            "median": 0.017652426577392966,
+            "p90": 0.031695288764246474,
+            "rmse": 0.021923263868848835,
+            "bias": -0.020067196868334736
+          },
+          "correct_events": 1232,
+          "event_accuracy": 0.9506172839506173,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 144
+            },
+            "goal_outside": {
+              "goal_inside": 64,
+              "goal_outside": 144
+            },
+            "goal_inside": {
+              "goal_inside": 944
+            }
+          }
+        },
+        "B-CA": {
+          "trials": 1296,
+          "paired_crossings": 1148,
+          "paired_position_m": {
+            "median": 0.06603046396541966,
+            "p90": 0.21258324115891544,
+            "rmse": 0.1258699423111951,
+            "bias": 0.09379263345490989
+          },
+          "paired_arrival_s": {
+            "median": 0.0016330643682453405,
+            "p90": 0.008038567339046227,
+            "rmse": 0.004978632910867086,
+            "bias": 0.001541452011783509
+          },
+          "common_position_m": {
+            "median": 0.06603046396541966,
+            "p90": 0.21258324115891544,
+            "rmse": 0.1258699423111951,
+            "bias": 0.09379263345490987
+          },
+          "common_arrival_s": {
+            "median": 0.0016330643682453405,
+            "p90": 0.008038567339046227,
+            "rmse": 0.004978632910867086,
+            "bias": 0.001541452011783509
+          },
+          "correct_events": 1282,
+          "event_accuracy": 0.9891975308641975,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 144
+            },
+            "goal_outside": {
+              "goal_outside": 203,
+              "goal_inside": 5
+            },
+            "goal_inside": {
+              "goal_inside": 935,
+              "ground_first": 4,
+              "goal_outside": 5
+            }
+          }
+        },
+        "M-D": {
+          "trials": 1296,
+          "paired_crossings": 1152,
+          "paired_position_m": {
+            "median": 0.29363342527722025,
+            "p90": 0.6787249166832737,
+            "rmse": 0.3800498212392641,
+            "bias": 0.2934749020663993
+          },
+          "paired_arrival_s": {
+            "median": 0.0021687522420784644,
+            "p90": 0.008725779652176616,
+            "rmse": 0.005575237711698799,
+            "bias": -0.0005783203323110549
+          },
+          "common_position_m": {
+            "median": 0.2937605401046602,
+            "p90": 0.6786613350897754,
+            "rmse": 0.3801692816926511,
+            "bias": 0.2938419689981554
+          },
+          "common_arrival_s": {
+            "median": 0.00216328804330454,
+            "p90": 0.008702073123114338,
+            "rmse": 0.005563161761259742,
+            "bias": -0.0006076988631660966
+          },
+          "correct_events": 1232,
+          "event_accuracy": 0.9506172839506173,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 144
+            },
+            "goal_outside": {
+              "goal_inside": 64,
+              "goal_outside": 144
+            },
+            "goal_inside": {
+              "goal_inside": 944
+            }
+          }
+        },
+        "M-DM": {
+          "trials": 1296,
+          "paired_crossings": 1151,
+          "paired_position_m": {
+            "median": 0.05512670993195054,
+            "p90": 0.18312518213701878,
+            "rmse": 0.10724907967278977,
+            "bias": 0.07937530906935465
+          },
+          "paired_arrival_s": {
+            "median": 0.0011539188118779298,
+            "p90": 0.006719908328239432,
+            "rmse": 0.0039026739111460234,
+            "bias": 0.00012172571834281494
+          },
+          "common_position_m": {
+            "median": 0.05491095486095668,
+            "p90": 0.18072843802483976,
+            "rmse": 0.10675797865477209,
+            "bias": 0.07899532504262174
+          },
+          "common_arrival_s": {
+            "median": 0.0011476053966196498,
+            "p90": 0.006690593697361312,
+            "rmse": 0.00388996238451509,
+            "bias": 0.00010467204648355297
+          },
+          "correct_events": 1277,
+          "event_accuracy": 0.9853395061728395,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 144
+            },
+            "goal_outside": {
+              "goal_outside": 195,
+              "goal_inside": 13
+            },
+            "goal_inside": {
+              "goal_inside": 938,
+              "ground_first": 1,
+              "goal_outside": 5
+            }
+          }
+        }
+      }
+    },
+    "0.005": {
+      "trials": 1296,
+      "common_crossings": 1051,
+      "truth_event_counts": {
+        "goal_inside": 944,
+        "goal_outside": 208,
+        "ground_first": 144
+      },
+      "models": {
+        "B-G": {
+          "trials": 1296,
+          "paired_crossings": 1152,
+          "paired_position_m": {
+            "median": 0.2927994368546821,
+            "p90": 0.679157875893251,
+            "rmse": 0.3838526994490745,
+            "bias": 0.30696945655866337
+          },
+          "paired_arrival_s": {
+            "median": 0.01755542510074007,
+            "p90": 0.031899474965036215,
+            "rmse": 0.021973230887093527,
+            "bias": -0.020087582795282024
+          },
+          "common_position_m": {
+            "median": 0.291237039607786,
+            "p90": 0.6704829483549734,
+            "rmse": 0.3740054161678777,
+            "bias": 0.2995247048191373
+          },
+          "common_arrival_s": {
+            "median": 0.016758931192914328,
+            "p90": 0.031450725922870015,
+            "rmse": 0.021143733479218576,
+            "bias": -0.019344190260381252
+          },
+          "correct_events": 1232,
+          "event_accuracy": 0.9506172839506173,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 144
+            },
+            "goal_outside": {
+              "goal_inside": 64,
+              "goal_outside": 144
+            },
+            "goal_inside": {
+              "goal_inside": 944
+            }
+          }
+        },
+        "B-CA": {
+          "trials": 1296,
+          "paired_crossings": 1054,
+          "paired_position_m": {
+            "median": 0.2726684919622327,
+            "p90": 0.9200022754967402,
+            "rmse": 0.5681644074594332,
+            "bias": 0.4089415757874811
+          },
+          "paired_arrival_s": {
+            "median": 0.006127258598340124,
+            "p90": 0.03321740375770719,
+            "rmse": 0.024540086946864846,
+            "bias": 0.0032185984054738655
+          },
+          "common_position_m": {
+            "median": 0.2719621971638121,
+            "p90": 0.9209302850335883,
+            "rmse": 0.568611147700038,
+            "bias": 0.40903740137404654
+          },
+          "common_arrival_s": {
+            "median": 0.006111346671087481,
+            "p90": 0.03285547200079009,
+            "rmse": 0.024255390155229657,
+            "bias": 0.0032047488696075772
+          },
+          "correct_events": 1065,
+          "event_accuracy": 0.8217592592592593,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 126,
+              "goal_inside": 17,
+              "goal_outside": 1
+            },
+            "goal_outside": {
+              "goal_outside": 171,
+              "ground_first": 14,
+              "goal_inside": 23
+            },
+            "goal_inside": {
+              "ground_first": 84,
+              "goal_inside": 768,
+              "goal_outside": 92
+            }
+          }
+        },
+        "M-D": {
+          "trials": 1296,
+          "paired_crossings": 1147,
+          "paired_position_m": {
+            "median": 0.29260999491705875,
+            "p90": 0.6801313006339482,
+            "rmse": 0.3826798920232395,
+            "bias": 0.3039426326102057
+          },
+          "paired_arrival_s": {
+            "median": 0.00579682348706978,
+            "p90": 0.02734092771353335,
+            "rmse": 0.01591001358228102,
+            "bias": 0.0005956718768929157
+          },
+          "common_position_m": {
+            "median": 0.2910272952674868,
+            "p90": 0.6708273657170143,
+            "rmse": 0.37405435744581883,
+            "bias": 0.29726833389685503
+          },
+          "common_arrival_s": {
+            "median": 0.005378039698992532,
+            "p90": 0.024168892060034697,
+            "rmse": 0.014668120661351957,
+            "bias": -3.542063149624861e-05
+          },
+          "correct_events": 1228,
+          "event_accuracy": 0.9475308641975309,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 144
+            },
+            "goal_outside": {
+              "goal_inside": 63,
+              "ground_first": 1,
+              "goal_outside": 144
+            },
+            "goal_inside": {
+              "goal_inside": 940,
+              "ground_first": 4
+            }
+          }
+        },
+        "M-DM": {
+          "trials": 1296,
+          "paired_crossings": 1073,
+          "paired_position_m": {
+            "median": 0.2555122059299742,
+            "p90": 0.8565789199166881,
+            "rmse": 0.5170291119323143,
+            "bias": 0.3773769997552551
+          },
+          "paired_arrival_s": {
+            "median": 0.005473629584805961,
+            "p90": 0.02620401068675782,
+            "rmse": 0.0179689814222362,
+            "bias": 0.0026016670868119875
+          },
+          "common_position_m": {
+            "median": 0.2541501643784258,
+            "p90": 0.8352367415873336,
+            "rmse": 0.5066001091015111,
+            "bias": 0.37166171493443817
+          },
+          "common_arrival_s": {
+            "median": 0.005344694086518498,
+            "p90": 0.024711135704089005,
+            "rmse": 0.01668264673387795,
+            "bias": 0.0018360708403923414
+          },
+          "correct_events": 1086,
+          "event_accuracy": 0.8379629629629629,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 126,
+              "goal_inside": 17,
+              "goal_outside": 1
+            },
+            "goal_outside": {
+              "goal_outside": 174,
+              "ground_first": 9,
+              "goal_inside": 25
+            },
+            "goal_inside": {
+              "goal_inside": 786,
+              "ground_first": 70,
+              "goal_outside": 88
+            }
+          }
+        }
+      }
+    },
+    "0.01": {
+      "trials": 1296,
+      "common_crossings": 972,
+      "truth_event_counts": {
+        "goal_inside": 944,
+        "goal_outside": 208,
+        "ground_first": 144
+      },
+      "models": {
+        "B-G": {
+          "trials": 1296,
+          "paired_crossings": 1152,
+          "paired_position_m": {
+            "median": 0.2946457275864479,
+            "p90": 0.6780143779084198,
+            "rmse": 0.3863292066591496,
+            "bias": 0.31190030316659023
+          },
+          "paired_arrival_s": {
+            "median": 0.017253149834257797,
+            "p90": 0.032467093253957094,
+            "rmse": 0.02202541668718057,
+            "bias": -0.020074507807584803
+          },
+          "common_position_m": {
+            "median": 0.2884134373623872,
+            "p90": 0.627834702999261,
+            "rmse": 0.3599776004131873,
+            "bias": 0.2919601603436995
+          },
+          "common_arrival_s": {
+            "median": 0.016367068978733856,
+            "p90": 0.030086243101737187,
+            "rmse": 0.0203648109613599,
+            "bias": -0.018674342034760972
+          },
+          "correct_events": 1224,
+          "event_accuracy": 0.9444444444444444,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 144
+            },
+            "goal_outside": {
+              "goal_inside": 64,
+              "goal_outside": 144
+            },
+            "goal_inside": {
+              "goal_inside": 936,
+              "goal_outside": 8
+            }
+          }
+        },
+        "B-CA": {
+          "trials": 1296,
+          "paired_crossings": 985,
+          "paired_position_m": {
+            "median": 0.5331915187011151,
+            "p90": 1.7915207975485674,
+            "rmse": 1.1736255033435994,
+            "bias": 0.8049376711399201
+          },
+          "paired_arrival_s": {
+            "median": 0.011612920324822085,
+            "p90": 0.06088312998648495,
+            "rmse": 0.045682814577709896,
+            "bias": 0.005062729613639973
+          },
+          "common_position_m": {
+            "median": 0.5315129742522877,
+            "p90": 1.7319402711186982,
+            "rmse": 1.1658814119983993,
+            "bias": 0.7975862274151375
+          },
+          "common_arrival_s": {
+            "median": 0.011473255338627475,
+            "p90": 0.05589329322381729,
+            "rmse": 0.04241573367646123,
+            "bias": 0.0046824278211199145
+          },
+          "correct_events": 883,
+          "event_accuracy": 0.6813271604938271,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 107,
+              "goal_inside": 29,
+              "goal_outside": 7,
+              "timeout": 1
+            },
+            "goal_outside": {
+              "timeout": 2,
+              "ground_first": 24,
+              "goal_inside": 38,
+              "goal_outside": 144
+            },
+            "goal_inside": {
+              "ground_first": 140,
+              "goal_outside": 171,
+              "goal_inside": 632,
+              "timeout": 1
+            }
+          }
+        },
+        "M-D": {
+          "trials": 1296,
+          "paired_crossings": 1123,
+          "paired_position_m": {
+            "median": 0.29402510705834756,
+            "p90": 0.676553967834047,
+            "rmse": 0.3863244221666709,
+            "bias": 0.31243733014452046
+          },
+          "paired_arrival_s": {
+            "median": 0.010412213492794142,
+            "p90": 0.03387222033266169,
+            "rmse": 0.025371226754500906,
+            "bias": 0.002900821191253697
+          },
+          "common_position_m": {
+            "median": 0.2883976358148271,
+            "p90": 0.6256037792414765,
+            "rmse": 0.3626896270674508,
+            "bias": 0.2936784749100414
+          },
+          "common_arrival_s": {
+            "median": 0.00940673268191275,
+            "p90": 0.03037846815891383,
+            "rmse": 0.02032598964964282,
+            "bias": 0.0007029304124195512
+          },
+          "correct_events": 1210,
+          "event_accuracy": 0.933641975308642,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 144
+            },
+            "goal_outside": {
+              "ground_first": 9,
+              "goal_inside": 55,
+              "goal_outside": 144
+            },
+            "goal_inside": {
+              "goal_inside": 922,
+              "ground_first": 20,
+              "goal_outside": 2
+            }
+          }
+        },
+        "M-DM": {
+          "trials": 1296,
+          "paired_crossings": 1012,
+          "paired_position_m": {
+            "median": 0.4993813783976598,
+            "p90": 1.6782389798661108,
+            "rmse": 1.0031685112779947,
+            "bias": 0.7318922252429428
+          },
+          "paired_arrival_s": {
+            "median": 0.010060554847383607,
+            "p90": 0.040222509639082686,
+            "rmse": 0.03768294604876268,
+            "bias": 0.009561205200736814
+          },
+          "common_position_m": {
+            "median": 0.48852770070015084,
+            "p90": 1.6080300160254553,
+            "rmse": 0.9738681850185793,
+            "bias": 0.7098050193779522
+          },
+          "common_arrival_s": {
+            "median": 0.009666351323693395,
+            "p90": 0.03354282479849073,
+            "rmse": 0.027642643459582276,
+            "bias": 0.0055477510664385145
+          },
+          "correct_events": 932,
+          "event_accuracy": 0.7191358024691358,
+          "confusion": {
+            "ground_first": {
+              "ground_first": 109,
+              "goal_inside": 33,
+              "goal_outside": 2
+            },
+            "goal_outside": {
+              "goal_outside": 153,
+              "ground_first": 19,
+              "goal_inside": 36
+            },
+            "goal_inside": {
+              "ground_first": 121,
+              "goal_outside": 153,
+              "goal_inside": 670
+            }
+          }
+        }
+      }
+    }
+  }
+}

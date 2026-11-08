@@ -87,10 +87,10 @@ def goal_plane(ref, settings, contour_file, path, *, fixed_release=False,
         full.annotate('Crossing region', reference, xytext=(-1.55, 1.57), fontsize=9,
                       color=INK, va='center',
                       arrowprops=dict(arrowstyle='->', color=INK, lw=0.9, shrinkB=4))
-        panel(zoom, '(b)', 'Equal wind speeds (4B)' if fixed_release else 'Equal wind speeds')
+        panel(zoom, '(b)', 'W2: fixed release' if fixed_release else 'Equal wind speeds')
     else:
         fig, zoom = plt.subplots(figsize=(6.8, 4.65))
-        zoom.set_title('Equal wind speeds (4A)', loc='left', pad=9, fontweight='bold', color=INK)
+        zoom.set_title('W1: refitted wind', loc='left', pad=9, fontweight='bold', color=INK)
     zoom.set(xlabel=r'$\Delta y_g$ (cm)', ylabel=r'$\Delta z_g$ (cm)')
     if fixed_release:
         zoom.set_box_aspect(0.50)
@@ -256,8 +256,8 @@ def displacement_comparison(pairs, path):
                                  for pair in pairs]) for i in (0, 1))
         ax.axvline(0, color=INK, ls='--', lw=0.85)
         ax.hlines(rows, refit, fixed, color='#9caebe', lw=1, zorder=2)
-        ax.scatter(fixed, rows, color=VIOLET, marker='s', s=42, zorder=3, label='4B  Fixed release')
-        ax.scatter(refit, rows, color=TEAL, marker='o', s=32, zorder=4, label='4A  Refit')
+        ax.scatter(fixed, rows, color=VIOLET, marker='s', s=42, zorder=3, label='W2  Fixed release')
+        ax.scatter(refit, rows, color=TEAL, marker='o', s=32, zorder=4, label='W1  Refit')
         ax.set_xlabel(unit)
         ax.xaxis.set_major_locator(MaxNLocator(5))
     axes[0].set_yticks(rows, [wind_label(pair[0]) for pair in pairs])
@@ -310,8 +310,8 @@ def trajectories_3d(cases, observations, settings, trajectory_file, path):
         for axis in (ax.xaxis, ax.yaxis, ax.zaxis):
             axis.set_pane_color((0.96, 0.97, 0.98, 0.65))
     fig.legend(handles=[
-        Line2D([], [], color=TEAL, lw=2, label='4A  Refit'),
-        Line2D([], [], color=VIOLET, lw=2, ls='--', label='4B  Fixed release'),
+        Line2D([], [], color=TEAL, lw=2, label='W1  Refit'),
+        Line2D([], [], color=VIOLET, lw=2, ls='--', label='W2  Fixed release'),
         Line2D([], [], color=INK, marker='o', ls='', ms=4, label='Observed positions'),
         Line2D([], [], color=ACROSS, lw=2, marker='>', markevery=[1], label='Wind direction'),
     ], loc='lower center', ncol=4, frameon=False, bbox_to_anchor=(0.5, 0.015))
