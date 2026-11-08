@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102820">
+    <title>Penalty Trajectory · UPC 2026</title>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <div class="brand">
+          <svg viewBox="0 0 36 36" aria-hidden="true">
+            <rect x="1" y="1" width="34" height="34" rx="9"/>
+            <path d="M9 24c6-12 13-12 18-12M9 27h18M27 12v15"/>
+            <circle cx="19" cy="14" r="2.4"/>
+          </svg>
+          <div><span>UPC 2026 / PROBLEM B</span><strong>Penalty Trajectory</strong></div>
+        </div>
+        <nav aria-label="Solver modes">
+          <a href="#/" data-mode="inverse">Three-Point Prediction</a>
+          <a href="#/forward" data-mode="forward">Forward Simulation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <header class="page-heading">
+        <div>
+          <p class="eyebrow">CONSTANT WIND</p>
+          <h1 id="mode-title">Three-Point Prediction</h1>
+        </div>
+        <p class="pitch-dimensions"><span>Penalty mark</span> <b>11 m</b> <span>Goal</span> <b>7.32 × 2.44 m</b></p>
+      </header>
+
+      <div class="dashboard">
+        <aside class="controls-panel" aria-label="Inputs">
+          <form id="solver-form"></form>
+        </aside>
+
+        <section class="analysis" aria-label="Results">
+          <div class="summary">
+            <div><span class="metric-label">Outcome</span><strong id="status" role="status">Ready</strong></div>
+            <div><span class="metric-label" id="time-label">Time</span><strong id="event-time">—</strong></div>
+            <div><span class="metric-label">Goal point (y, z)</span><strong data-testid="goal-result" id="goal-result">—</strong></div>
+          </div>
+
+          <div class="plots">
+            <section class="plot-card">
+              <header><div><span class="eyebrow">FIELD VIEW</span><h2>Flight path</h2></div><button class="quiet-button" type="button" id="reset-view">Reset view</button></header>
+              <div id="scene" class="scene">
+                <span class="scene-help" aria-hidden="true">Drag to orbit · Scroll or pinch to zoom</span>
+              </div>
+              <div class="legend"><span><i class="key path"></i> Flight path</span><span id="observation-key"><i class="key observation"></i> Observations</span><span><i class="key wind"></i> Wind</span></div>
+            </section>
+
+            <section class="plot-card goal-card">
+              <header><div><span class="eyebrow">x = 11 m</span><h2>Goal plane</h2></div></header>
+              <svg id="goal-plot" class="goal-plot" viewBox="0 0 440 272" role="img" aria-label="Goal mouth, horizontal y and vertical z in metres"></svg>
+              <div class="legend"><span><i class="key path"></i> Goal point</span><span id="region-key" hidden><i class="key region"></i> 95% region · plane crossings</span></div>
+              <p id="sample-status" class="sample-status" aria-live="polite" hidden></p>
+              <dl id="sample-counts" data-testid="sample-counts" class="sample-counts" hidden></dl>
+            </section>
+          </div>
+
+          <section class="fit-panel" id="fit-panel" hidden>
+            <h2>Fitted parameters</h2>
+            <dl id="fit-metrics"></dl>
+          </section>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -173,6 +173,7 @@ def main():
     for part, name in ((1, "background_penalty.jpg"), (8, "solver.png")):
         relative = Path("figures") / f"part{part:02d}" / name
         copy2(REPO_ROOT / relative, output / relative)
+    run_module("part08.paper_manifest", [], env)
     print(f"Outputs: {output}", flush=True)
 
 

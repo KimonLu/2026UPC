@@ -1,0 +1,22 @@
+{
+  "name": "penalty-trajectory-solver",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "node --test tests/*.test.ts",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "@types/three": "0.187.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.6"
+  }
+}

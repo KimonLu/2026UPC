@@ -1,0 +1,187 @@
+{
+  "models": [
+    "B-CA",
+    "B-G",
+    "M-D",
+    "M-DM"
+  ],
+  "cases": {
+    "B": [
+      "B1",
+      "B2"
+    ],
+    "S": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ],
+    "W": [
+      "W1",
+      "W2"
+    ],
+    "U": [
+      "U1",
+      "U2",
+      "U3",
+      "U4",
+      "U5",
+      "U6"
+    ],
+    "V": [
+      "V1",
+      "V2",
+      "V3",
+      "V4"
+    ],
+    "R": [
+      "R1"
+    ]
+  },
+  "core_sources": {
+    "scripts/common/still_air.py": {
+      "sha256": "8065b127b86bfb38eac0936d5b61d5f4a24cb7fe19c9a8f26eed7b6d6c5e8a80",
+      "functions": {
+        "_air_force_terms": [
+          115,
+          125
+        ],
+        "simulate": [
+          171,
+          213
+        ],
+        "fit_from_positions": [
+          251,
+          332
+        ]
+      }
+    },
+    "scripts/part05/part5_solver.py": {
+      "sha256": "aa66aee86490eb1752fe9afa830de2d0f9ed722f4740c7780001abbfbde4aa84",
+      "functions": {
+        "residual_jacobian": [
+          64,
+          72
+        ],
+        "fit_batch": [
+          75,
+          129
+        ],
+        "predict_batch": [
+          148,
+          178
+        ]
+      }
+    },
+    "scripts/part05/run_part5.py": {
+      "sha256": "9a55572f51e78fa0bffa20c79324e7cc935dd1eede14e81a52c9b881d7befe9b",
+      "functions": {
+        "summarize": [
+          34,
+          58
+        ],
+        "kde_mode": [
+          61,
+          70
+        ]
+      }
+    },
+    "scripts/part06/part6_coverage.py": {
+      "sha256": "663689bf4c4b2de6ed84ee0d7581c46b56878fd769cf10c9bc4444a46bd98f45",
+      "functions": {
+        "coverage_draws": [
+          27,
+          31
+        ],
+        "run_trial": [
+          69,
+          87
+        ]
+      }
+    }
+  },
+  "figures": {
+    "figures/part01/part1_fig1.png": {
+      "overleaf": "figures/part1_fig1.png",
+      "sha256": "a50ef1ab22e35797a46d16d2bed4d193756128fad3e364ceb19a78399866ce48"
+    },
+    "figures/part02/part2_fig3.png": {
+      "overleaf": "figures/part2_fig3.png",
+      "sha256": "589ea7b72ad6e016422dfe0ba4aff79e7ffe2fcaf3a4d1b02c11dc5bdd14e693"
+    },
+    "figures/part03/part3_traj_mdm_constant.png": {
+      "overleaf": "figures/part3_traj_mdm_constant.png",
+      "sha256": "4449b3fc8db1c3c9c020ff109ab19ce4d635c363294b7ae8da0f3ac6d069017a"
+    },
+    "figures/part03/part3_fig1.png": {
+      "overleaf": "figures/part3_fig1.png",
+      "sha256": "32896ea718c6c9be7de0fdd64ef96573dabe293f582b42d2d98c9a630ccdfc8c"
+    },
+    "figures/part03/part3_goal_comparison.png": {
+      "overleaf": "figures/part3_goal_comparison.png",
+      "sha256": "fc18d6c0851bddc693bd5c1ef32cdfda473c4622ec689e0235519d78cabdbc65"
+    },
+    "figures/part03/part3_omega1_crossings.png": {
+      "overleaf": "figures/part3_omega1_crossings.png",
+      "sha256": "8e1ba138606b47ad53a5284214812f5ed98e98ee7ba9c7188ef918e4bb3dd0a1"
+    },
+    "figures/part03/part3_cd_sensitivity.png": {
+      "overleaf": "figures/part3_cd_sensitivity.png",
+      "sha256": "5c5e3907ce9de3b12ccb8e188d30b15e25944d98de89c50e158e2b03b1eb5af7"
+    },
+    "figures/part04/part4_w1_fit_parameters.png": {
+      "overleaf": "figures/part4_w1_fit_parameters.png",
+      "sha256": "4082a99759b4496e534256e61bfd241a44cdaee7e5ebc2dca94e8c2d45e975f4"
+    },
+    "figures/part04/part4_w1_wind_contours.png": {
+      "overleaf": "figures/part4_w1_wind_contours.png",
+      "sha256": "2ef8a5ab0d9af2d6ffbe0e011a2a18945649280a43b0d4ff51fbac28116ca266"
+    },
+    "figures/part04/part4_w2_wind_coverage.png": {
+      "overleaf": "figures/part4_w2_wind_coverage.png",
+      "sha256": "d57b2b17f86fc6308525f994bac4c8ee228ef19821ad6dcfb5e6ec4226cab3be"
+    },
+    "figures/part05/part5_position_density.png": {
+      "overleaf": "figures/part5_position_density.png",
+      "sha256": "85f581943a3decddd480a1a85f22ed753511e63789e1057b053732af3a7be068"
+    },
+    "figures/part05/part5_timing_density.png": {
+      "overleaf": "figures/part5_timing_density.png",
+      "sha256": "0b07c22175858f2cc05f586321db33cdf6f3545b0e18c7987942eeded329e232"
+    },
+    "figures/part05/part5_cd_sensitivity.png": {
+      "overleaf": "figures/part5_cd_sensitivity.png",
+      "sha256": "f2daeb487ab9c059358cafaa56162acdfc0dcad029005bb894359aac2c0317c2"
+    },
+    "figures/part05/part5_wake_spectrum_crossings.png": {
+      "overleaf": "figures/part5_wake_spectrum_crossings.png",
+      "sha256": "a9f2972120a36721d6a30ba62d376c41079ad13993e1245b2e77a1143f094a49"
+    },
+    "figures/part06/part6_goal_plane.png": {
+      "overleaf": "figures/part6_goal_plane.png",
+      "sha256": "e8ce12a2965bd4922f2aa7f0e33d7b21e08a8982b64af62fa98a2ecd82702aec"
+    },
+    "figures/part06/part6_fig1.png": {
+      "overleaf": "figures/part6_fig1.png",
+      "sha256": "b255b44415d82bb31af97e0efc2f88ee3efff383e44e76a7469ade1600978ee8"
+    },
+    "figures/part06/part6_fig2.png": {
+      "overleaf": "figures/part6_fig2.png",
+      "sha256": "9dfbec1c1a0ad151edc535ec6132effcd7929810e2febd22e1e435a7d9dfd62f"
+    },
+    "figures/part07/part7_bounce_3d.png": {
+      "overleaf": "figures/part7_bounce_3d.png",
+      "sha256": "d1e60ffb0e385f037dec4cbeae15b18cb8f32c2b2bf1c8676fa251b50c8d9a5d"
+    },
+    "figures/part08/solver.png": {
+      "overleaf": "figures/part8_solver.png",
+      "sha256": "dc89a5e142f31be44b7b124cf99567e5d98b9b916ffbf27b4538c80d2f7b56e8"
+    }
+  },
+  "derived_data": [
+    "data/part06/benchmark_comparison.json",
+    "data/part06/event_confusion.csv",
+    "data/part06/kde_sensitivity.json"
+  ]
+}
