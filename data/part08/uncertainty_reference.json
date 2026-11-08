@@ -1,0 +1,44 @@
+[
+  {
+    "noise": 5,
+    "wind": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "counts": {
+      "goal_inside": 1956,
+      "goal_outside": 44,
+      "ground_first": 0,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0
+    },
+    "center": [
+      2.608709851402574,
+      1.9579312820479986
+    ],
+    "area": 1.1491502133928848
+  },
+  {
+    "noise": 10,
+    "wind": [
+      2.0,
+      0.0,
+      0.0
+    ],
+    "counts": {
+      "goal_inside": 1659,
+      "goal_outside": 341,
+      "ground_first": 0,
+      "fit_failure": 0,
+      "numerical_failure": 0,
+      "timeout": 0
+    },
+    "center": [
+      2.631851959385324,
+      1.9581603514614083
+    ],
+    "area": 4.443600493565583
+  }
+]
