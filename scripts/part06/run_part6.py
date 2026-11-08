@@ -46,7 +46,7 @@ def given_shot():
              for case_id, case in saved_shots().items()}
     cases['B-G']['acceleration_m_s2'] = [0, 0, -9.81]
     cases['B-CA']['acceleration_m_s2'] = [-16, -16, -12]
-    return dict(cases=cases, uncertainty=summaries, main_case='4A/calm', sigma_m=.005)
+    return dict(cases=cases, uncertainty=summaries, main_case='M-DM', sigma_m=.005)
 
 
 def main():
