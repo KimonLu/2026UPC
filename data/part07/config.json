@@ -1,0 +1,15 @@
+{
+  "source_config": "data/part03/config.json",
+  "given_fit": "data/part03/results.json",
+  "given_crosscheck": "data/part06/given_shot.json",
+  "given_case": "M-DM",
+  "restitution": [0.4, 0.6, 0.8],
+  "friction": [0.0, 0.1, 0.3, 0.5],
+  "reference_e_n": 0.6,
+  "ablation_mu_f": 0.3,
+  "synthetic_velocity_m_s": {"low": [20.0, 1.0, 1.0], "near": [20.0, 1.0, 1.8]},
+  "paper_example": {"velocity_m_s": [20.0, 1.0, 1.86], "contrast_e_n": 0.5, "contrast_mu_f": 0.1},
+  "synthetic_cd": 0.2,
+  "synthetic_k_l": 1.0,
+  "refined_integration": {"rtol": 1e-10, "atol": 1e-12, "max_step": 0.001}
+}
