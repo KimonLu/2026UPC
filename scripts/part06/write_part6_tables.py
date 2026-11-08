@@ -80,13 +80,9 @@ def shot_table():
     cases = read_json(DATA / 'given_shot.json')['cases']
     rows = []
     for case_id, case in cases.items():
-        label = '4A' if case_id.startswith('4A/') else case_id
-        if case_id == '4A/x+2':
-            label = r'\textbf{4A}'
-        if case_id in ('M-DM5', 'M-DM1'):
-            label = 'M-DM'
-        if case_id == 'M-D20':
-            label = 'M-D (fixed)'
+        label = 'W1' if case_id.startswith('W1/') else case_id
+        if case_id == 'W1/x+2':
+            label = r'\textbf{W1}'
         v0 = ','.join(f'{v:.2f}' for v in case['v0_m_s'])
         spin = ','.join(f'{v:.1f}' for v in case['omega_basis_rad_s'][1:])
         cd = '--' if case['cd'] is None else f'{case["cd"]:.3f}'
@@ -102,12 +98,12 @@ def shot_table():
         r'Given-shot fits. All rows cross inside the goal before ground contact. '
         r'RMS is computed over the six later coordinates. The fixed M-D row prescribes \(C_D=0.20\). '
         r'Wind has \(w_z=0\), '
-        r'and the calm M-DM row also represents 4A in calm air. '
+        r'and the calm M-DM row also represents W1 in calm air. '
         r'Spin components use the chord basis with \(\omega_1=0\) and \(k_L=1\). '
         r'B-CA also fits \(\mathbf a=(-16,-16,-12)\,\mathrm{m\,s^{-2}}\), '
         r'and B-G fixes \(\mathbf a=(0,0,-g)\).',
         'tab:part6-shot', 'lccrccrrc',
-        ['Model', r'\shortstack{\((w_x,w_y)\)\\(\(\mathrm{m/s}\))}',
+        ['Case', r'\shortstack{\((w_x,w_y)\)\\(\(\mathrm{m/s}\))}',
          r'\shortstack{\(\tau\)\\(s)}', r'\(C_D\)',
          r'\shortstack{\(\mathbf v_0\)\\(\(\mathrm{m/s}\))}',
          r'\shortstack{\((\omega_2,\omega_3)\)\\(\(\mathrm{rad/s}\))}',

@@ -36,7 +36,7 @@ class ConstantWindTests(unittest.TestCase):
     def test_ground_first_has_no_crossing_or_post_contact_residual(self):
         times = np.array([0.0, 0.05, 0.10])
         positions = np.array([[0., 0., 0.11], [1.50, 0.45, 0.44], [2.96, 0.86, 0.74]])
-        record, _ = evaluate_case('4B', 'test', times, positions,
+        record, _ = evaluate_case('W2', 'test', times, positions,
                                   Motion((20., 0., 0.4), 0.2),
                                   Physics(wind=(0., 3., 0.)), Settings(), np.eye(3))
         self.assertEqual(record['event'], 'ground_first')

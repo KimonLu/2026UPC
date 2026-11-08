@@ -44,9 +44,9 @@ def given_shot():
     cases = {case_id: dict(**{key: case[key] for key in keys},
                            wind_m_s=case.get('wind_m_s', [0, 0, 0]))
              for case_id, case in saved_shots().items()}
-    cases['B-G']['acceleration_m_s2'] = [0, 0, -9.81]
-    cases['B-CA']['acceleration_m_s2'] = [-16, -16, -12]
-    return dict(cases=cases, uncertainty=summaries, main_case='M-DM', sigma_m=.005)
+    cases['B2']['acceleration_m_s2'] = [0, 0, -9.81]
+    cases['B1']['acceleration_m_s2'] = [-16, -16, -12]
+    return dict(cases=cases, uncertainty=summaries, main_case='S3', sigma_m=.005)
 
 
 def main():

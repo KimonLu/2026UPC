@@ -14,7 +14,7 @@
   ],
   "rows": [
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "mass",
       "value": 0.41,
       "event": "goal_inside",
@@ -37,7 +37,7 @@
       "effective_gravity": 9.649921479597605
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "mass",
       "value": 0.43,
       "event": "goal_inside",
@@ -60,7 +60,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "mass",
       "value": 0.45,
       "event": "goal_inside",
@@ -83,7 +83,7 @@
       "effective_gravity": 9.66415068141115
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "density",
       "value": 1.1,
       "event": "goal_inside",
@@ -106,7 +106,7 @@
       "effective_gravity": 9.670086409493257
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "density",
       "value": 1.2,
       "event": "goal_inside",
@@ -129,7 +129,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "density",
       "value": 1.3,
       "event": "goal_inside",
@@ -152,7 +152,7 @@
       "effective_gravity": 9.644647574855666
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "viscosity",
       "value": 1.7e-05,
       "event": "goal_inside",
@@ -175,7 +175,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "viscosity",
       "value": 1.81e-05,
       "event": "goal_inside",
@@ -198,7 +198,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "viscosity",
       "value": 1.9e-05,
       "event": "goal_inside",
@@ -221,7 +221,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "cd",
       "value": 0.1,
       "event": "goal_inside",
@@ -244,7 +244,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "cd",
       "value": 0.2,
       "event": "goal_inside",
@@ -267,7 +267,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "cd",
       "value": 0.3,
       "event": "goal_inside",
@@ -290,7 +290,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "cd",
       "value": 0.5,
       "event": "goal_inside",
@@ -313,7 +313,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "k_l",
       "value": 0.5,
       "event": "goal_inside",
@@ -336,7 +336,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "k_l",
       "value": 1.0,
       "event": "goal_inside",
@@ -359,7 +359,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "k_l",
       "value": 1.5,
       "event": "goal_inside",
@@ -382,7 +382,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "gravity",
       "value": 9.78,
       "event": "goal_inside",
@@ -405,7 +405,7 @@
       "effective_gravity": 9.627833759782488
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "gravity",
       "value": 9.81,
       "event": "goal_inside",
@@ -428,7 +428,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "gravity",
       "value": 9.83,
       "event": "goal_inside",
@@ -451,7 +451,7 @@
       "effective_gravity": 9.677055813769107
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "wind_z",
       "value": -1.0,
       "event": "goal_inside",
@@ -474,7 +474,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "wind_z",
       "value": 0.0,
       "event": "goal_inside",
@@ -497,7 +497,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5C",
+      "family": "U3",
       "parameter": "wind_z",
       "value": 1.0,
       "event": "goal_inside",
@@ -520,7 +520,7 @@
       "effective_gravity": 9.65736699217446
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, 2.0, 0.0)",
       "event": "goal_inside",
@@ -544,7 +544,7 @@
       "duration_s": 0.02
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, 2.0, 0.0)",
       "event": "goal_inside",
@@ -568,7 +568,7 @@
       "duration_s": 0.05
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, 2.0, 0.0)",
       "event": "goal_inside",
@@ -592,7 +592,7 @@
       "duration_s": 0.1
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, 2.0, 0.0)",
       "event": "goal_inside",
@@ -616,7 +616,7 @@
       "duration_s": 0.02
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, 2.0, 0.0)",
       "event": "goal_inside",
@@ -640,7 +640,7 @@
       "duration_s": 0.05
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, 2.0, 0.0)",
       "event": "goal_inside",
@@ -664,7 +664,7 @@
       "duration_s": 0.1
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, -2.0, 0.0)",
       "event": "goal_inside",
@@ -688,7 +688,7 @@
       "duration_s": 0.02
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, -2.0, 0.0)",
       "event": "goal_inside",
@@ -712,7 +712,7 @@
       "duration_s": 0.05
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, -2.0, 0.0)",
       "event": "goal_inside",
@@ -736,7 +736,7 @@
       "duration_s": 0.1
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, -2.0, 0.0)",
       "event": "goal_inside",
@@ -760,7 +760,7 @@
       "duration_s": 0.02
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, -2.0, 0.0)",
       "event": "goal_inside",
@@ -784,7 +784,7 @@
       "duration_s": 0.05
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(0.0, -2.0, 0.0)",
       "event": "goal_inside",
@@ -808,7 +808,7 @@
       "duration_s": 0.1
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(2.0, 0.0, 0.0)",
       "event": "goal_inside",
@@ -832,7 +832,7 @@
       "duration_s": 0.02
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(2.0, 0.0, 0.0)",
       "event": "goal_inside",
@@ -856,7 +856,7 @@
       "duration_s": 0.05
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(2.0, 0.0, 0.0)",
       "event": "goal_inside",
@@ -880,7 +880,7 @@
       "duration_s": 0.1
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(2.0, 0.0, 0.0)",
       "event": "goal_inside",
@@ -904,7 +904,7 @@
       "duration_s": 0.02
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(2.0, 0.0, 0.0)",
       "event": "goal_inside",
@@ -928,7 +928,7 @@
       "duration_s": 0.05
     },
     {
-      "family": "5D",
+      "family": "U4",
       "parameter": "gust",
       "value": "(2.0, 0.0, 0.0)",
       "event": "goal_inside",
@@ -952,7 +952,7 @@
       "duration_s": 0.1
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 0.0,
       "event": "goal_inside",
@@ -978,7 +978,7 @@
       "delta_z_from_drag_m": 1.633596613537236e-08
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 1.0,
       "event": "goal_inside",
@@ -1004,7 +1004,7 @@
       "delta_z_from_drag_m": -0.0011634236009478993
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 1.0,
       "event": "goal_inside",
@@ -1030,7 +1030,7 @@
       "delta_z_from_drag_m": 1.900256348785767e-05
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 1.0,
       "event": "goal_inside",
@@ -1056,7 +1056,7 @@
       "delta_z_from_drag_m": 0.001159850961729214
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 1.0,
       "event": "goal_inside",
@@ -1082,7 +1082,7 @@
       "delta_z_from_drag_m": -1.908282029838837e-05
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 1.0,
       "event": "goal_inside",
@@ -1108,7 +1108,7 @@
       "delta_z_from_drag_m": 1.4108611758878453e-06
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 1.0,
       "event": "goal_inside",
@@ -1134,7 +1134,7 @@
       "delta_z_from_drag_m": 0.000577966380332029
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 1.0,
       "event": "goal_inside",
@@ -1160,7 +1160,7 @@
       "delta_z_from_drag_m": -1.3950991475386587e-06
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 1.0,
       "event": "goal_inside",
@@ -1186,7 +1186,7 @@
       "delta_z_from_drag_m": -0.000578824530449662
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 3.0,
       "event": "goal_inside",
@@ -1212,7 +1212,7 @@
       "delta_z_from_drag_m": -0.00350100228341943
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 3.0,
       "event": "goal_inside",
@@ -1238,7 +1238,7 @@
       "delta_z_from_drag_m": 5.68277006987028e-05
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 3.0,
       "event": "goal_inside",
@@ -1264,7 +1264,7 @@
       "delta_z_from_drag_m": 0.0034689326776762286
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 3.0,
       "event": "goal_inside",
@@ -1290,7 +1290,7 @@
       "delta_z_from_drag_m": -5.751674338339008e-05
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 3.0,
       "event": "goal_inside",
@@ -1316,7 +1316,7 @@
       "delta_z_from_drag_m": 4.229873076022628e-06
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 3.0,
       "event": "goal_inside",
@@ -1342,7 +1342,7 @@
       "delta_z_from_drag_m": 0.0017313603726589744
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 3.0,
       "event": "goal_inside",
@@ -1368,7 +1368,7 @@
       "delta_z_from_drag_m": -4.1441280751453036e-06
     },
     {
-      "family": "5E",
+      "family": "U5",
       "parameter": "wake",
       "value": 3.0,
       "event": "goal_inside",
@@ -1394,7 +1394,7 @@
       "delta_z_from_drag_m": -0.0017390186140759933
     },
     {
-      "family": "5F",
+      "family": "U6",
       "parameter": "axis_z",
       "value": 0.0,
       "event": "goal_inside",
@@ -1417,7 +1417,7 @@
       "axis_angle_deg": 0.0
     },
     {
-      "family": "5F",
+      "family": "U6",
       "parameter": "axis_z",
       "value": -30.0,
       "event": "goal_inside",
@@ -1440,7 +1440,7 @@
       "axis_angle_deg": 3.1677656313930656
     },
     {
-      "family": "5F",
+      "family": "U6",
       "parameter": "axis_z",
       "value": -10.0,
       "event": "goal_inside",
@@ -1463,7 +1463,7 @@
       "axis_angle_deg": 1.0659969314710913
     },
     {
-      "family": "5F",
+      "family": "U6",
       "parameter": "axis_z",
       "value": 10.0,
       "event": "goal_inside",
@@ -1486,7 +1486,7 @@
       "axis_angle_deg": 1.0747020514590135
     },
     {
-      "family": "5F",
+      "family": "U6",
       "parameter": "axis_z",
       "value": 30.0,
       "event": "goal_inside",
@@ -1509,7 +1509,7 @@
       "axis_angle_deg": 3.2460351939516086
     },
     {
-      "family": "5F",
+      "family": "U6",
       "parameter": "axis_y",
       "value": 0.0,
       "event": "goal_inside",
@@ -1532,7 +1532,7 @@
       "axis_angle_deg": 0.0
     },
     {
-      "family": "5F",
+      "family": "U6",
       "parameter": "axis_y",
       "value": -30.0,
       "event": "goal_inside",
@@ -1555,7 +1555,7 @@
       "axis_angle_deg": 11.931326093323397
     },
     {
-      "family": "5F",
+      "family": "U6",
       "parameter": "axis_y",
       "value": -10.0,
       "event": "goal_inside",
@@ -1578,7 +1578,7 @@
       "axis_angle_deg": 3.9743485484941234
     },
     {
-      "family": "5F",
+      "family": "U6",
       "parameter": "axis_y",
       "value": 10.0,
       "event": "goal_inside",
@@ -1601,7 +1601,7 @@
       "axis_angle_deg": 3.9715899439465776
     },
     {
-      "family": "5F",
+      "family": "U6",
       "parameter": "axis_y",
       "value": 30.0,
       "event": "goal_inside",

@@ -14,7 +14,7 @@ from matplotlib.lines import Line2D
 from matplotlib.patches import Rectangle
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
-from scripts.common.plot_style import GRID, INK, STYLES, TEAL, VIOLET, panel, save
+from scripts.common.plot_style import GRID, INK, CASE_STYLES as STYLES, TEAL, VIOLET, panel, save
 
 
 def fit_residuals(data, path):
@@ -65,7 +65,7 @@ def identifiability(data, path):
     chord = [row for row in data['profiles'] if row['case'] == 'omega_parallel']
     cd = np.array([row['value'] for row in drag])
     cd_max = np.array([row['max_residual_m'] for row in drag]) * 1000
-    cd_best = data['cases']['M-DM']['cd']
+    cd_best = data['cases']['S3']['cd']
     screen = data['config']['coordinate_screen_m'] * 1000
     ax = axes[0, 1]
     ax.axhspan(0, screen, color='#e5f2ed', zorder=0)
@@ -76,7 +76,7 @@ def identifiability(data, path):
     ax.legend(frameon=False, loc='upper right', fontsize=8.5)
     panel(ax, '(b)', 'Drag profile')
 
-    goal = data['cases']['M-DM']['goal']
+    goal = data['cases']['S3']['goal']
     for ax, profile, name, xlabel, baseline in (
         (axes[1, 0], drag, 'Drag', r'Fixed $C_D$', cd_best),
         (axes[1, 1], chord, 'Chord-axis spin', r'Fixed $\omega_1$ (rad s$^{-1}$)', 0.),
@@ -141,13 +141,13 @@ def goal_and_spin(data, trajectories, path):
     spin_ax.axvspan(0., time_end, color='#e7eff6', zorder=0)
     spin_ax.text(time_end / 2, 0.04, 'Fit window', transform=spin_ax.get_xaxis_transform(),
                  color=INK, ha='center', va='bottom', fontsize=8)
-    for key in ('M-DM', 'M-DM5', 'M-DM1'):
+    for key in ('S3', 'S4', 'S5'):
         values = trajectories[key]
         color, marker, _ = STYLES[key]
         spin_ax.plot(values[:, 0], values[:, 4], color=color, lw=1.8)
         spin_ax.scatter(*values[-1, [0, 4]], color=color, marker=marker, s=45, ec='white', lw=0.6, zorder=4)
     spin_ax.set(xlabel='Time after release (s)', ylabel=r'Angular speed $|\boldsymbol{\omega}|$ (rad s$^{-1}$)',
-                xlim=(0., max(cases[key]['event_time_s'] for key in ('M-DM', 'M-DM5', 'M-DM1')) + 0.03))
+                xlim=(0., max(cases[key]['event_time_s'] for key in ('S3', 'S4', 'S5')) + 0.03))
     spin_ax.grid(color=GRID)
     spin_ax.set_axisbelow(True)
     panel(spin_ax, '(c)', 'Refitted spin histories')
@@ -164,7 +164,7 @@ def trajectories_3d(data, trajectories, path):
     goal_x, half_width, height = field['goal_x'], field['goal_half_width'], field['goal_height']
     observed = np.array(config['positions_m'])
     last_t = config['times_s'][-1]
-    keys = ('B-G', 'M-D', 'M-DM', 'M-DM1')
+    keys = ('B2', 'S2', 'S3', 'S5')
     fig = plt.figure(figsize=(8.2, 4.65))
     ax = fig.add_axes([0.045, 0.19, 0.91, 0.80], projection='3d', proj_type='ortho',
                       computed_zorder=False)

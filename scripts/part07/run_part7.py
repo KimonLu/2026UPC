@@ -73,7 +73,7 @@ def write_paper_example(config, physics, settings, refined):
     summary, trajectories = [], []
 
     for (e_n, mu_f), expected_event in zip(cases, expected, strict=True):
-        key = case_id('paper', 'air', e_n, mu_f)
+        key = case_id('R1', 'air', e_n, mu_f)
         options = dict(e_n=e_n, mu_f=mu_f)
         coarse = simulate_bounce(release, motion, physics, settings, **options)
         fine = simulate_bounce(release, motion, physics, refined, **options)

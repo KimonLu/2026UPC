@@ -45,7 +45,7 @@ def compute_baselines() -> list[dict]:
     t = TIMES[1:, None]
     v_g = np.sum(t * (OBSERVATIONS[1:] - OBSERVATIONS[0] - .5 * gravity * t**2), axis=0) / np.sum(t**2)
     models = []
-    for name, case, velocity, acceleration in [('B-CA', '1A', v_ca, a_ca), ('B-G', '1B', v_g, gravity)]:
+    for name, case, velocity, acceleration in [('B-CA', 'B1', v_ca, a_ca), ('B-G', 'B2', v_g, gravity)]:
         # The numerically stable smaller root; x0=0, v0x>0 for this dataset.
         discriminant = velocity[0]**2 + 2 * acceleration[0] * GOAL_X
         tg = 2 * GOAL_X / (velocity[0] + np.sqrt(discriminant))
@@ -54,7 +54,7 @@ def compute_baselines() -> list[dict]:
         model = {'model': name, 'case': case, 'v0_m_s': velocity.tolist(),
                  'a_m_s2': acceleration.tolist(), 'goal_time_s': float(tg),
                  'ground_contact_time_s': float(t_contact),
-                 'fit_status': 'analytic_interpolation' if case == '1A' else 'analytic_least_squares'}
+                 'fit_status': 'analytic_interpolation' if case == 'B1' else 'analytic_least_squares'}
         crossing = position(model, tg)
         residual = position(model, TIMES[1:]) - OBSERVATIONS[1:]
         sse = float(np.sum(residual**2))
@@ -75,7 +75,7 @@ def write_results(models: list[dict]) -> None:
     out.mkdir(parents=True, exist_ok=True)
     delta = np.array(models[1]['goal_position_m']) - np.array(models[0]['goal_position_m'])
     payload = {
-        'scope': 'Cases 1A and 1B',
+        'scope': 'Cases B1 and B2',
         'input': {'times_s': TIMES.tolist(), 'observations_m': OBSERVATIONS.tolist(),
                   'fixed_initial_position': True, 'gravity_m_s2': G, 'radius_m': R,
                   'goal_x_m': GOAL_X, 'goal_y_bounds_m': [-3.66, 3.66], 'goal_z_bounds_m': [0., 2.44]},

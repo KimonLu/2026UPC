@@ -1,5 +1,5 @@
 {
-  "scope": "Cases 1A and 1B",
+  "scope": "Cases B1 and B2",
   "input": {
     "times_s": [
       0.0,
@@ -52,7 +52,7 @@
   "models": [
     {
       "model": "B-CA",
-      "case": "1A",
+      "case": "B1",
       "v0_m_s": [
         30.4,
         9.4,
@@ -96,7 +96,7 @@
     },
     {
       "model": "B-G",
-      "case": "1B",
+      "case": "B2",
       "v0_m_s": [
         29.679999999999993,
         8.68,

@@ -102,14 +102,14 @@ def run():
         print(f'Fitting {name} {tuple(wind)} m/s', flush=True)
         current = replace(physics, wind=tuple(wind))
         fit, audit = fit_wind(times, positions, current, settings, fit_options, base['random_starts'])
-        record, samples = evaluate_case('4A', name, times, positions, fit.best.motion,
+        record, samples = evaluate_case('W1', name, times, positions, fit.best.motion,
                                         current, settings, fit.basis)
         expanded = audit['expanded_parameters'] if audit['expanded_used'] else ()
         refined_fit = fit_from_positions(times, positions, current, tight, **fit_options,
                                          warm_start=fit.best.motion, expanded=expanded)
         if refined_fit.best is None:
             raise RuntimeError(f'No admissible refined fit for wind {wind}.')
-        refined, _ = evaluate_case('4A', name, times, positions, refined_fit.best.motion,
+        refined, _ = evaluate_case('W1', name, times, positions, refined_fit.best.motion,
                                     current, tight, fit.basis)
         record['fit'] = audit
         cases[record['case']], trajectories[record['case']] = record, samples
@@ -120,15 +120,15 @@ def run():
 
     for name, wind in config['winds'].items():
         current = replace(physics, wind=tuple(wind))
-        record, samples = evaluate_case('4B', name, times, positions, calm_motion,
+        record, samples = evaluate_case('W2', name, times, positions, calm_motion,
                                         current, settings, calm_basis)
-        refined, _ = evaluate_case('4B', name, times, positions, refined_calm_motion,
+        refined, _ = evaluate_case('W2', name, times, positions, refined_calm_motion,
                                     current, tight, calm_basis)
         cases[record['case']], trajectories[record['case']] = record, samples
         convergence[record['case']] = check_convergence(record, refined, config['convergence_limits'])
 
-    reference = json.loads(base_path.with_name('results.json').read_text(encoding='utf-8'))['cases']['M-DM']
-    calm = cases['4A/calm']
+    reference = json.loads(base_path.with_name('results.json').read_text(encoding='utf-8'))['cases']['S3']
+    calm = cases['W1/calm']
     for case in cases.values():
         if case['wind_id'] == 'calm':
             assert case['event'] == reference['event']
@@ -136,7 +136,7 @@ def run():
                 np.testing.assert_allclose(case[key], reference[key], atol=1e-7, rtol=0)
             np.testing.assert_allclose(list(case['goal'].values()), list(reference['goal'].values()),
                                        atol=1e-8, rtol=0)
-        if case['experiment'] == '4B':
+        if case['experiment'] == 'W2':
             for key in ('v0_m_s', 'cd', 'omega_xyz_rad_s', 'k_l', 'tau_s'):
                 assert case[key] == calm[key]
         case['delta_goal'] = None if case['goal'] is None else {
@@ -208,7 +208,7 @@ def fixed_release_model():
     result = json.loads((DATA / 'results.json').read_text(encoding='utf-8'))
     base = result['part3_config']
     physics, settings = Physics(**base['physics']), Settings(**base['integration'])
-    calm = result['cases']['4A/calm']
+    calm = result['cases']['W1/calm']
     motion = Motion(calm['v0_m_s'], calm['cd'], calm['omega_xyz_rad_s'],
                     k_l=calm['k_l'], tau=calm['tau_s'] if calm['tau_s'] is not None else np.inf)
     return base['positions_m'][0], motion, physics, settings, calm['goal']

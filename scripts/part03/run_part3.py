@@ -177,8 +177,8 @@ def run():
     trajectories = {}
     v_ca, v_g, a_ca = baseline_initials(times, positions, physics.gravity)
     for key, velocity, acceleration in (
-        ('B-G', v_g, np.array([0., 0., -physics.gravity])),
-        ('B-CA', v_ca, a_ca),
+        ('B2', v_g, np.array([0., 0., -physics.gravity])),
+        ('B1', v_ca, a_ca),
     ):
         motion = Motion(velocity, 0.)
         flight = baseline_flight(positions[0], velocity, acceleration, physics, settings)
@@ -187,15 +187,15 @@ def run():
         cases[key] = case_record(key, motion, flight, residuals, np.eye(3), samples, aerodynamic=False)
         trajectories[key] = samples
 
-    for key, reference in (('B-G', [0.3706199461, 3.2169811321, 1.95700643]),
-                           ('B-CA', [0.4050083612, 2.4948244142, 1.9203670565])):
+    for key, reference in (('B2', [0.3706199461, 3.2169811321, 1.95700643]),
+                           ('B1', [0.4050083612, 2.4948244142, 1.9203670565])):
         np.testing.assert_allclose(list(cases[key]['goal'].values()), reference, rtol=0, atol=1e-8)
 
     models = {
-        'M-D20': dict(fit_spin=False, cd=config['fixed_cd']),
-        'M-D': dict(fit_spin=False),
-        'M-DM': dict(fit_spin=True),
-        **{f'M-DM{tau:g}': dict(fit_spin=True, tau=tau) for tau in config['finite_spin_decay_s']},
+        'S1': dict(fit_spin=False, cd=config['fixed_cd']),
+        'S2': dict(fit_spin=False),
+        'S3': dict(fit_spin=True),
+        **{case: dict(fit_spin=True, tau=tau) for case, tau in zip(('S4', 'S5'), config['finite_spin_decay_s'], strict=True)},
     }
     best_fits = {}
     convergence = {}
@@ -249,7 +249,7 @@ def run():
                                 refined_goal=goal_record(precise_flight))
 
     print('Profiling drag and chord-axis spin', flush=True)
-    nominal = best_fits['M-DM']
+    nominal = best_fits['S3']
     diagnostics = scaled_svd(nominal, times, positions, physics, settings)
     profiles = []
     for name, config_key in (('cd', 'cd_grid'), ('omega_parallel', 'chord_spin_grid_rad_s')):

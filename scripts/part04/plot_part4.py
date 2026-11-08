@@ -273,7 +273,7 @@ def trajectories_3d(cases, observations, settings, trajectory_file, path):
         ('x-5', 'Headwind'), ('x+5', 'Tailwind'),
         ('y+5', 'Crosswind'), ('diagonal', 'Oblique wind'),
     )
-    keys = {f'{experiment}/{wind}' for wind, _ in scenarios for experiment in ('4A', '4B')}
+    keys = {f'{experiment}/{wind}' for wind, _ in scenarios for experiment in ('W1', 'W2')}
     tracks = defaultdict(list)
     with trajectory_file.open(encoding='utf-8', newline='') as source:
         for row in csv.DictReader(source):
@@ -284,12 +284,12 @@ def trajectories_3d(cases, observations, settings, trajectory_file, path):
     fig = plt.figure(figsize=(9.2, 6.9))
     for index, (wind, title) in enumerate(scenarios, 1):
         ax = fig.add_subplot(2, 2, index, projection='3d')
-        wx, wy, _ = cases[f'4A/{wind}']['wind_m_s']
+        wx, wy, _ = cases[f'W1/{wind}']['wind_m_s']
         ax.set_title(fr'({chr(96 + index)})  {title}  $({wx:g},{wy:g})$ m/s',
                      loc='left', color=INK, fontweight='bold', pad=0)
         ax.plot([goal_x] * 5, [-half_width, half_width, half_width, -half_width, -half_width],
                 [0, 0, height, height, 0], color=INK, linewidth=1.1, alpha=0.68)
-        for experiment, color, style in (('4A', TEAL, '-'), ('4B', VIOLET, '--')):
+        for experiment, color, style in (('W1', TEAL, '-'), ('W2', VIOLET, '--')):
             positions = np.array(tracks[f'{experiment}/{wind}'])
             ax.plot(*positions.T, color=color, linestyle=style, linewidth=1.9)
             ax.plot(*positions[-1], marker='o', color=color, markersize=3.2)
@@ -325,7 +325,7 @@ def make_figures(data_directory, figure_directory, *, crossings_only=False,
     cases = result['cases']
     names = result['config']['winds']
     with plt.rc_context(FIGURE_STYLE):
-        reference = cases['4A/calm']['goal']
+        reference = cases['W1/calm']['goal']
         settings = result['part3_config']['integration']
         if not fixed_contours_only:
             goal_plane(reference, settings, data_directory / 'wind_contours.csv',
@@ -334,8 +334,8 @@ def make_figures(data_directory, figure_directory, *, crossings_only=False,
                    figure_directory / 'part4_fig5.png', fixed_release=True)
         if crossings_only or fixed_contours_only:
             return
-        fitted_parameters([cases[f'4A/{name}'] for name in names], figure_directory / 'part4_fig2.png')
-        displacement_comparison([(cases[f'4A/{name}'], cases[f'4B/{name}']) for name in names],
+        fitted_parameters([cases[f'W1/{name}'] for name in names], figure_directory / 'part4_fig2.png')
+        displacement_comparison([(cases[f'W1/{name}'], cases[f'W2/{name}']) for name in names],
                                 figure_directory / 'part4_fig3.png')
         base = result['part3_config']
         trajectories_3d(cases, base['positions_m'], base['integration'],
@@ -344,13 +344,13 @@ def make_figures(data_directory, figure_directory, *, crossings_only=False,
 
 def make_paper_figures(data_directory, figure_directory):
     result = json.loads((data_directory / 'results.json').read_text(encoding='utf-8'))
-    calm = result['cases']['4A/calm']
+    calm = result['cases']['W1/calm']
     settings = result['part3_config']['integration']
     refits = data_directory / 'wind_contours.csv'
     with plt.rc_context(FIGURE_STYLE):
-        goal_plane(calm['goal'], settings, refits, figure_directory / 'part4_4a_wind_contours.png',
+        goal_plane(calm['goal'], settings, refits, figure_directory / 'part4_w1_wind_contours.png',
                    show_full=False)
-        axial_fit_parameters(calm, refits, figure_directory / 'part4_4a_fit_parameters.png')
+        axial_fit_parameters(calm, refits, figure_directory / 'part4_w1_fit_parameters.png')
         goal_plane(calm['goal'], settings, data_directory / 'fixed_release_contours.csv',
-                   figure_directory / 'part4_4b_wind_coverage.png', fixed_release=True,
+                   figure_directory / 'part4_w2_wind_coverage.png', fixed_release=True,
                    coverage_file=data_directory / 'fixed_release_coverage.csv')

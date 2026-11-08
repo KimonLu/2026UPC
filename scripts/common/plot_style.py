@@ -15,11 +15,18 @@ VIOLET = '#7846a0'
 STYLES = {
     'B-G': ('#6c7581', 'o', 'B-G'),
     'B-CA': ('#344962', 's', 'B-CA'),
-    'M-D20': ('#c58535', 'X', r'M-D ($C_D=0.20$)'),
     'M-D': ('#b84327', 'D', 'M-D (fitted)'),
     'M-DM': (TEAL, 'o', 'M-DM'),
-    'M-DM5': ('#2965a5', 'P', r'M-DM ($5\,\mathrm{s}$)'),
-    'M-DM1': (VIOLET, '^', r'M-DM ($1\,\mathrm{s}$)'),
+}
+
+CASE_STYLES = {
+    'B2': (*STYLES['B-G'][:2], 'B2: B-G'),
+    'B1': (*STYLES['B-CA'][:2], 'B1: B-CA'),
+    'S1': ('#c58535', 'X', r'S1: M-D ($C_D=0.20$)'),
+    'S2': (*STYLES['M-D'][:2], 'S2: M-D (fitted)'),
+    'S3': (*STYLES['M-DM'][:2], 'S3: M-DM'),
+    'S4': ('#2965a5', 'P', r'S4: M-DM ($\tau=5\,\mathrm{s}$)'),
+    'S5': (VIOLET, '^', r'S5: M-DM ($\tau=1\,\mathrm{s}$)'),
 }
 
 

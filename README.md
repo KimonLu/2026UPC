@@ -48,11 +48,29 @@ Full mode reruns the 4,000-draw ensembles, the synthetic benchmarks, and the 600
 | 1 | `part01.geometry` | Observed positions and goal geometry, `part1_fig1.png` |
 | 2 | `part02.part2_baseline` | Analytical fits, residuals, trajectories, and `part2_fig1.png` to `part2_fig3.png` |
 | 3 | `part03.run_part3`, `part03.plot_part3_revision` | Fits, spin and drag profiles, trajectory and crossing plots |
-| 4 | `part04.run_part4` | 4A refits and 4B fixed-release results, wind contours and coverage |
+| 4 | `part04.run_part4` | W1 refits and W2 fixed-release results, wind contours and coverage |
 | 5 | `part05.run_part5`, `part05.run_part5_wake`, `part05.plot_part5_revision` | Ensembles, sensitivity cases, density and wake figures |
 | 6 | `part06.run_part6`, `part06.plot_goal_plane` | Synthetic benchmarks, coverage, given-shot results, and goal-plane plot |
 | 7 | `part07.run_part7`, `part07.write_part7_table` | Contact events and friction sweep, `part7_bounce_3d.png` |
 | 8 | `part08.workflow`, `part08/solver/src/` | Workflow figure, core solver, archived screenshot and comparison data |
+
+## Paper identifiers and source data
+
+The paper uses family names B-CA, B-G, M-D and M-DM. Analysis identifiers describe a calculation or question; they are not section numbers. The same analysis identifiers are used in the code, data, figures and paper.
+
+| Paper case | Meaning | Result key or source |
+| --- | --- | --- |
+| B1 / B2 | Constant acceleration / gravity-only baseline | `B1` / `B2` |
+| S1 / S2 | Still-air drag, fixed / fitted coefficient | `S1` / `S2` |
+| S3 | Still-air constant-spin reference | `S3` |
+| S4 / S5 | Spin decay with 5 s / 1 s time constant | `S4` / `S5` |
+| W1 / W2 | Prescribed-wind refit / fixed-release response | `W1/*` / `W2/*` |
+| U1 / U2 | Coordinate / timing perturbations | `position/*` / `time/*` in Part 5 |
+| U3 | Mass, density and prescribed drag scans | `U3` scenario family |
+| U4 / U6 | Qualitative gust / spin-axis discussion | No new numerical experiment claimed |
+| U5 | Zero-spin spectral wake refits | `wake_crossings.csv`, `wake_results.json` |
+| V1 / V2 / V3 / V4 | Numerical checks / synthetic benchmark / model mismatch / coverage | `v1_*` / `v2_*` / `v3_*` / `coverage/` |
+| R1 | Illustrative one-bounce friction sweep | `paper_bounce.csv`, `paper_trajectories.csv` |
 
 ## Sources
 

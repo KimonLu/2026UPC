@@ -117,7 +117,7 @@ def density_figure(samples, summaries, cases, baseline, shape, filename):
 
 
 def cd_figure():
-    rows = [r for r in read_rows(DATA / 'scenarios.csv') if r['family'] == '5C']
+    rows = [r for r in read_rows(DATA / 'scenarios.csv') if r['family'] == 'U3']
     nominal = next(r for r in rows if r['parameter'] == 'mass' and r['value'] == '0.43')
     fixed = [r for r in rows if r['parameter'] == 'cd']
     assert [float(r['cd']) for r in fixed] == [.10, .20, .30, .50]

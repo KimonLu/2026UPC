@@ -2,7 +2,7 @@
   "source_config": "data/part03/config.json",
   "given_fit": "data/part03/results.json",
   "given_crosscheck": "data/part06/given_shot.json",
-  "given_case": "M-DM",
+  "given_case": "S3",
   "restitution": [0.4, 0.6, 0.8],
   "friction": [0.0, 0.1, 0.3, 0.5],
   "reference_e_n": 0.6,

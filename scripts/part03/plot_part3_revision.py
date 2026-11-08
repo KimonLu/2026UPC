@@ -3,7 +3,7 @@ import csv
 import json
 from collections import defaultdict
 
-from scripts.common.plot_style import GRID, INK, STYLES, TEAL, VIOLET, panel, save
+from scripts.common.plot_style import GRID, INK, CASE_STYLES as STYLES, TEAL, VIOLET, panel, save
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.lines import Line2D
@@ -16,8 +16,8 @@ from scripts.common.paths import data_dir, figures_dir
 DATA = data_dir(3)
 OUTPUT = figures_dir(3)
 CASES = {
-    'M-D20': 'md_fixed', 'M-D': 'md_fit', 'M-DM': 'mdm_constant',
-    'M-DM5': 'mdm_tau5', 'M-DM1': 'mdm_tau1',
+    'S1': 'md_fixed', 'S2': 'md_fit', 'S3': 'mdm_constant',
+    'S4': 'mdm_tau5', 'S5': 'mdm_tau1',
 }
 FIT, PRED = '#b58a39', '#3a6478'
 PASS = '#e5f2ed'
@@ -176,7 +176,7 @@ def main():
         trajectory(paths[key], data['config'], OUTPUT / f'part3_traj_{name}.png')
     goal_comparison(data, OUTPUT / 'part3_goal_comparison.png')
     chord_scatter(chord, OUTPUT / 'part3_omega1_crossings.png')
-    drag_profile(drag, data['cases']['M-DM'], 1000*screen, OUTPUT / 'part3_cd_sensitivity.png')
+    drag_profile(drag, data['cases']['S3'], 1000*screen, OUTPUT / 'part3_cd_sensitivity.png')
     print(f'Checked {len(table)} crossings, {len(chord)} chord-spin samples and '
           f'{len(drag)} drag samples. Screened drag interval {min(passed):.2f}–{max(passed):.2f}.')
 

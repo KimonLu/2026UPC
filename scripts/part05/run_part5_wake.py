@@ -36,7 +36,7 @@ def main():
     args = parser.parse_args()
     traces, checks = generate_traces(256, SHOT_SEED)
     base = fit_trace(WakeTrace('No wake', 0, None))
-    stored = read_json(data_dir(3) / 'results.json')['cases']['M-D']
+    stored = read_json(data_dir(3) / 'results.json')['cases']['S2']
     target = stored['goal']
     difference = endpoint(base)-[target['t_s'], target['y_m'], target['z_m']]
     if np.max(np.abs(difference)) > 1e-6 or abs(base['cd']-stored['cd']) > 1e-6:

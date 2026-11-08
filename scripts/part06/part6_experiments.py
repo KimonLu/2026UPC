@@ -35,7 +35,7 @@ def saved_shots():
     part3 = read_json(data_dir(3) / 'results.json')['cases']
     part4 = read_json(data_dir(4) / 'results.json')['cases']
     return {**part3, **{key: case for key, case in part4.items()
-                        if key.startswith('4A/') and key != '4A/calm'}}
+                        if key.startswith('W1/') and key != 'W1/calm'}}
 
 
 def run_v1():
@@ -46,7 +46,7 @@ def run_v1():
                            passed=bool(value <= limit)))
 
     case_map = saved_shots()
-    velocity = np.asarray(case_map['B-G']['v0_m_s'])
+    velocity = np.asarray(case_map['B2']['v0_m_s'])
     for name, physics in [('gravity', replace(PHYSICS, density=0.)),
                           ('gravity_buoyancy', PHYSICS)]:
         flight = simulate(R0, Motion(velocity, 0.), physics, SETTINGS)

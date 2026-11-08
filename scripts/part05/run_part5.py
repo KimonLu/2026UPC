@@ -1,4 +1,4 @@
-"""Reproduce all outline Cases 5A--5F; every Monte Carlo draw is retained."""
+"""Reproduce all outline Cases U1--U6; every Monte Carlo draw is retained."""
 import argparse
 import csv
 import json
@@ -173,25 +173,25 @@ def compute_scenarios():
             if name=='wind_z':phys=replace(physics,wind=(2.,0.,value))
             options={'fixed_cd':value} if name=='cd' else {'k_l':value} if name=='k_l' else {}
             fit=s.fit_general(phys,guess=p0,**options)
-            row=record('5C',name,value,fit,phys,k_l=value if name=='k_l' else 1.)
+            row=record('U3',name,value,fit,phys,k_l=value if name=='k_l' else 1.)
             row['effective_gravity']=phys.effective_gravity
     for direction in [(0.,2.,0.),(0.,-2.,0.),(2.,0.,0.)]:
         for start in [.15,.25]:
             for duration in [.02,.05,.1]:
-                row=record('5D','gust',str(direction),reference,gust=(start,duration,direction))
+                row=record('U4','gust',str(direction),reference,gust=(start,duration,direction))
                 row.update(start_s=start,duration_s=duration)
     no_spin=s.fit_general(physics,fit_spin=False,guess=p0)
     wake_reference=s.general_flight(no_spin['parameters'],no_spin['basis'],physics)
     for amplitude,frequency,phase in [(0.,5.,0.)]+[(a,f,phase) for a in [1.,3.] for f in [5.,10.] for phase in [0.,np.pi/2,np.pi,3*np.pi/2]]:
         wake=(amplitude,frequency,phase)
         fit=s.fit_general(physics,wake=wake,fit_spin=False,guess=no_spin['parameters'])
-        row=record('5E','wake',amplitude,fit,wake=wake)
+        row=record('U5','wake',amplitude,fit,wake=wake)
         row.update(frequency_hz=frequency,phase_rad=phase,delta_y_from_drag_m=row['y_g_m']-wake_reference['goal'][1],delta_z_from_drag_m=row['z_g_m']-wake_reference['goal'][2])
     for name,axis in [('z',[0.,0.,1.]),('y',[0.,1.,0.])]:
         for degrees in [0.,-30.,-10.,10.,30.]:
             rate=np.deg2rad(degrees)
             fit=s.fit_general(physics,axis=axis,rate=rate,guess=p0)
-            row=record('5F','axis_'+name,degrees,fit,axis=axis,rate=rate)
+            row=record('U6','axis_'+name,degrees,fit,axis=axis,rate=rate)
             omega=fit['basis']@np.r_[0.,fit['parameters'][4:]]
             end=s.rotate_spin(omega,axis,rate,row['t_g_s'])
             row['axis_angle_deg']=float(np.rad2deg(np.arccos(np.clip(np.dot(omega,end)/np.linalg.norm(omega)**2,-1,1))))
@@ -203,7 +203,7 @@ def compute_scenarios():
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--samples',type=int,default=4000);parser.add_argument('--scenarios-only',action='store_true');args=parser.parse_args()
     DATA.mkdir(parents=True,exist_ok=True)
-    config=dict(seed=SEED,n=args.samples,position_sigma_m=[0.,.001,.005,.01],rounding_half_width_m=.005,time_sigma_s=[.0005,.001],nominal_times=s.TIMES.tolist(),positions=s.OBS.tolist(),models=MODELS,main_wind_m_s=[2.,0.,0.],observation_rk4_steps_per_interval=10,prediction_rk4_step_s=.004,expanded_bounds=[s.LOW.tolist(),s.HIGH.tolist()],region='empirical Mahalanobis 95% ellipse conditional on successful goal-plane crossing; not a calibrated coverage claim',parameter_sampling='none; 5C--5F are prescribed scenarios, not random priors')
+    config=dict(seed=SEED,n=args.samples,position_sigma_m=[0.,.001,.005,.01],rounding_half_width_m=.005,time_sigma_s=[.0005,.001],nominal_times=s.TIMES.tolist(),positions=s.OBS.tolist(),models=MODELS,main_wind_m_s=[2.,0.,0.],observation_rk4_steps_per_interval=10,prediction_rk4_step_s=.004,expanded_bounds=[s.LOW.tolist(),s.HIGH.tolist()],region='empirical Mahalanobis 95% ellipse conditional on successful goal-plane crossing; not a calibrated coverage claim',parameter_sampling='none; U3--U6 are prescribed scenarios, not random priors')
     config.update(gaussian_rounding_matched_sigma_m=.005/np.sqrt(3),published_n=4000)
     (DATA/'config.json').write_text(json.dumps(config,indent=2)+'\n',encoding='utf-8')
     if not args.scenarios_only:
