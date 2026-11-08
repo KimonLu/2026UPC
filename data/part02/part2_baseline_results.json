@@ -1,0 +1,152 @@
+{
+  "scope": "Cases 1A and 1B",
+  "input": {
+    "times_s": [
+      0.0,
+      0.05,
+      0.1
+    ],
+    "observations_m": [
+      [
+        0.0,
+        0.0,
+        0.11
+      ],
+      [
+        1.5,
+        0.45,
+        0.44
+      ],
+      [
+        2.96,
+        0.86,
+        0.74
+      ]
+    ],
+    "fixed_initial_position": true,
+    "gravity_m_s2": 9.81,
+    "radius_m": 0.11,
+    "goal_x_m": 11.0,
+    "goal_y_bounds_m": [
+      -3.66,
+      3.66
+    ],
+    "goal_z_bounds_m": [
+      0.0,
+      2.44
+    ]
+  },
+  "provenance": {
+    "observations": "https://uphysicsc.com/2026contest.html",
+    "models": "Constant acceleration and gravity only",
+    "gravity_and_radius": "Fixed model parameters in SI units",
+    "runtime": {
+      "python": "3.12.10",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "fit_weights": "equal coordinate weights; initial position fixed",
+    "randomness": "none"
+  },
+  "models": [
+    {
+      "model": "B-CA",
+      "case": "1A",
+      "v0_m_s": [
+        30.4,
+        9.4,
+        6.8999999999999995
+      ],
+      "a_m_s2": [
+        -16.00000000000001,
+        -16.00000000000001,
+        -12.000000000000004
+      ],
+      "goal_time_s": 0.40500836122739475,
+      "ground_contact_time_s": 1.1499999999999995,
+      "fit_status": "analytic_interpolation",
+      "goal_position_m": [
+        11.0,
+        2.494824414224711,
+        1.920367056484424
+      ],
+      "residuals_m": [
+        [
+          0.0,
+          0.0,
+          -5.551115123125783e-17
+        ],
+        [
+          0.0,
+          0.0,
+          -1.1102230246251565e-16
+        ]
+      ],
+      "residual_definition": "predicted minus observed at t=0.05 and 0.10 s",
+      "sse_m2": 1.5407439555097887e-32,
+      "position_rmse_m": 8.777083671441753e-17,
+      "coordinate_rmse_m": 5.067451620406765e-17,
+      "goal_velocity_m_s": [
+        23.919866220361676,
+        2.91986622036168,
+        2.0398996652712613
+      ],
+      "event": "inside_goal"
+    },
+    {
+      "model": "B-G",
+      "case": "1B",
+      "v0_m_s": [
+        29.679999999999993,
+        8.68,
+        6.80145
+      ],
+      "a_m_s2": [
+        0.0,
+        0.0,
+        -9.81
+      ],
+      "goal_time_s": 0.3706199460916443,
+      "ground_contact_time_s": 1.3866360856269113,
+      "fit_status": "analytic_least_squares",
+      "goal_position_m": [
+        11.0,
+        3.2169811320754724,
+        1.9570064288620395
+      ],
+      "residuals_m": [
+        [
+          -0.016000000000000236,
+          -0.016000000000000014,
+          -0.0021900000000000253
+        ],
+        [
+          0.007999999999999563,
+          0.008000000000000007,
+          0.0010949999999999571
+        ]
+      ],
+      "residual_definition": "predicted minus observed at t=0.05 and 0.10 s",
+      "sse_m2": 0.0006459951250000012,
+      "position_rmse_m": 0.017972132942419512,
+      "coordinate_rmse_m": 0.010376215792217647,
+      "goal_velocity_m_s": [
+        29.679999999999993,
+        8.68,
+        3.1656683288409693
+      ],
+      "event": "inside_goal"
+    }
+  ],
+  "comparison": {
+    "B_G_minus_B_CA_goal_position_m": [
+      0.0,
+      0.7221567178507615,
+      0.0366393723776155
+    ],
+    "goal_separation_m": 0.7230855888103496,
+    "B_CA_minus_B_G_time_s": 0.03438841513575047,
+    "interpretation": "model spread, not a confidence interval"
+  }
+}

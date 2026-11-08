@@ -1,0 +1,27 @@
+# Public reproduction files
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/requirements.txt
+!/data/
+!/figures/
+!/scripts/
+
+/data/*
+!/data/part0[1-8]/
+/figures/*
+!/figures/part0[1-8]/
+/scripts/*
+!/scripts/__init__.py
+!/scripts/reproduce.py
+!/scripts/common/
+!/scripts/part0[1-8]/
+
+__pycache__/
+*.py[cod]
+node_modules/
+dist/
+test-results/
+playwright-report/
+.venv/
